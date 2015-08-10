@@ -10,6 +10,7 @@
 #import "JHCommonGroup.h"
 #import "JHCommonArrowItem.h"
 #import "JHSysPhotoAlbumVc.h"
+#import "JHCustomPhotoAlbumVc.h"
 
 @interface JHMainViewController ()
 
@@ -45,6 +46,7 @@
     JHCommonArrowItem *saveToSysPhotoAlbum = [JHCommonArrowItem itemWithTitle:@"保存照片到系统相册"];
     saveToSysPhotoAlbum.destVcClass = [JHSysPhotoAlbumVc class];
     JHCommonArrowItem *saveToCustomPhotoAlbum = [JHCommonArrowItem itemWithTitle:@"保存照片到自己创建的相簿"];
+    saveToCustomPhotoAlbum.destVcClass = [JHCustomPhotoAlbumVc class];
 
     
     group.items = @[saveToSysPhotoAlbum, saveToCustomPhotoAlbum];
