@@ -9,6 +9,7 @@
 #import "JHMainViewController.h"
 #import "JHCommonGroup.h"
 #import "JHCommonArrowItem.h"
+#import "JHSysPhotoAlbumVc.h"
 
 @interface JHMainViewController ()
 
@@ -20,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    self.title = @"分类";
+    self.title = @"主页";
     
     [self setupGroups];
 }
@@ -31,7 +32,6 @@
 - (void)setupGroups
 {
     [self setupGroup0];
-//    [self setupGroup1];
 }
 
 - (void)setupGroup0
@@ -42,21 +42,13 @@
     [self.groups addObject:group];
     
     // 2.设置组的所有行数据
-    JHCommonArrowItem *newFriend = [JHCommonArrowItem itemWithTitle:@"帐号管理"];
+    JHCommonArrowItem *saveToSysPhotoAlbum = [JHCommonArrowItem itemWithTitle:@"保存照片到系统相册(Photo Album)"];
+    saveToSysPhotoAlbum.destVcClass = [JHSysPhotoAlbumVc class];
+    JHCommonArrowItem *saveToCustomPhotoAlbum = [JHCommonArrowItem itemWithTitle:@"保存照片到自己创建的相簿"];
+
     
-    group.items = @[newFriend];
+    group.items = @[saveToSysPhotoAlbum, saveToCustomPhotoAlbum];
 }
 
-//- (void)setupGroup1
-//{
-//    // 1.创建组
-//    JHCommonGroup *group = [JHCommonGroup group];
-//    [self.groups addObject:group];
-//    
-//    // 2.设置组的所有行数据
-//    JHCommonArrowItem *newFriend = [JHCommonArrowItem itemWithTitle:@"主题、背景"];
-//        generalSetting.destVcClass = [JHGeneralSettingViewController class];
-//    group.items = @[newFriend];
-//}
 
 @end

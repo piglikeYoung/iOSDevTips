@@ -59,18 +59,12 @@
     //设置文字属性
     NSMutableDictionary *textAttrs=[NSMutableDictionary dictionary];
     //设置字体颜色
-    textAttrs[NSForegroundColorAttributeName]=[UIColor blackColor];
+    textAttrs[UITextAttributeTextColor]=[UIColor blackColor];
     //设置字体
-    textAttrs[NSFontAttributeName]=JHNavigationTitleFont;
-    //设置字体的阴影
-    NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowBlurRadius = 5;// 模糊度
-    shadow.shadowColor = [UIColor blackColor];
-    //偏移量为0
-    shadow.shadowOffset = CGSizeZero;
-    textAttrs[NSShadowAttributeName] = shadow;
-    //0 表示横排文本。1 表示竖排文本。在 iOS 中，总是使用横排文本，0 以外的值都未定义。
-    textAttrs[NSVerticalGlyphFormAttributeName] = @0;
+    textAttrs[UITextAttributeFont]=JHNavigationTitleFont;
+    //设置字体的偏移量（0）
+    //说明：UIOffsetZero是结构体，只有包装成NSValue对象才能放进字典中
+    textAttrs[UITextAttributeTextShadowOffset]=[NSValue valueWithUIOffset:UIOffsetZero];
     [appearance setTitleTextAttributes:textAttrs];
 }
 
@@ -87,18 +81,18 @@
     //1.设置普通状态下文字的属性
     NSMutableDictionary *textAttrs=[NSMutableDictionary dictionary];
     //设置字体
-    textAttrs[NSFontAttributeName]=[UIFont systemFontOfSize:15];
+    textAttrs[UITextAttributeFont]=[UIFont systemFontOfSize:15];
     //这是偏移量为0
-    textAttrs[NSShadowAttributeName]=[NSValue valueWithUIOffset:UIOffsetZero];
+    textAttrs[UITextAttributeTextShadowOffset]=[NSValue valueWithUIOffset:UIOffsetZero];
     //设置颜色为橙色
-    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[UITextAttributeTextColor] = [UIColor orangeColor];
     [appearance setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     
     
     //2.设置高亮状态下文字的属性
     //使用1中的textAttrs进行通用设置
     NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
-    highTextAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
+    highTextAttrs[UITextAttributeTextColor] = [UIColor redColor];
     [appearance setTitleTextAttributes:highTextAttrs forState:UIControlStateHighlighted];
     
     
@@ -106,7 +100,7 @@
     //使用1中的textAttrs进行通用设置
     NSMutableDictionary *disabletextAttrs=[NSMutableDictionary dictionaryWithDictionary:textAttrs];
     //设置颜色为灰色
-    disabletextAttrs[NSForegroundColorAttributeName]=[UIColor lightGrayColor];
+    disabletextAttrs[UITextAttributeTextColor]=[UIColor lightGrayColor];
     [appearance setTitleTextAttributes:disabletextAttrs forState:UIControlStateDisabled];
     
     
@@ -122,14 +116,14 @@
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    // 只有第一次push的控制器显示bottomBar，别的都隐藏
-    if (self.viewControllers.count > 0) {
-        viewController.hidesBottomBarWhenPushed = YES;
-        
-        // 导航栏的左上角和右上角按钮
+//    // 只有第一次push的控制器显示bottomBar，别的都隐藏
+//    if (self.viewControllers.count > 0) {
+//        viewController.hidesBottomBarWhenPushed = YES;
+//        
+//        // 导航栏的左上角和右上角按钮
         viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImageName:@"navigationbar_back" highImageName:@"navigationbar_back_highlighted" target:self action:@selector(back)];
-//        viewController.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navigationbar_more" highImageName:@"navigationbar_more_highlighted" target:self action:@selector(more)];
-    }
+////        viewController.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navigationbar_more" highImageName:@"navigationbar_more_highlighted" target:self action:@selector(more)];
+//    }
     
     [super pushViewController:viewController animated:animated];
 }

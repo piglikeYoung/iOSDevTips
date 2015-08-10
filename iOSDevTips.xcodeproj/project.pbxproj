@@ -15,7 +15,7 @@
 		7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F901B783FDE00D314CD /* JHNavigationController.m */; };
 		7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F921B783FDE00D314CD /* JHMainViewController.m */; };
 		7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F951B783FDE00D314CD /* AppDelegate.m */; };
-		7DAF4FA41B78404500D314CD /* PhotoAlbumVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA31B78404500D314CD /* PhotoAlbumVc.m */; };
+		7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA31B78404500D314CD /* JHSysPhotoAlbumVc.m */; };
 		7DAF4FA81B7840CA00D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */; };
 		7DAF4FAB1B7840D700D314CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */; };
 		7DAF4FAF1B7845EF00D314CD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */; };
@@ -52,8 +52,8 @@
 		7DAF4F921B783FDE00D314CD /* JHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainViewController.m; sourceTree = "<group>"; };
 		7DAF4F941B783FDE00D314CD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DAF4F951B783FDE00D314CD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7DAF4FA21B78404500D314CD /* PhotoAlbumVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumVc.h; sourceTree = "<group>"; };
-		7DAF4FA31B78404500D314CD /* PhotoAlbumVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumVc.m; sourceTree = "<group>"; };
+		7DAF4FA21B78404500D314CD /* JHSysPhotoAlbumVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSysPhotoAlbumVc.h; sourceTree = "<group>"; };
+		7DAF4FA31B78404500D314CD /* JHSysPhotoAlbumVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSysPhotoAlbumVc.m; sourceTree = "<group>"; };
 		7DAF4FA61B7840CA00D314CD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		7DAF4FA91B7840D700D314CD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 		7DAF4FA11B78404500D314CD /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				7DAF4FA21B78404500D314CD /* PhotoAlbumVc.h */,
-				7DAF4FA31B78404500D314CD /* PhotoAlbumVc.m */,
+				7DAF4FA21B78404500D314CD /* JHSysPhotoAlbumVc.h */,
+				7DAF4FA31B78404500D314CD /* JHSysPhotoAlbumVc.m */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAF4FA81B7840CA00D314CD /* UIBarButtonItem+Extension.m in Sources */,
-				7DAF4FA41B78404500D314CD /* PhotoAlbumVc.m in Sources */,
+				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
 				7DAF4FAB1B7840D700D314CD /* UIView+Extension.m in Sources */,
