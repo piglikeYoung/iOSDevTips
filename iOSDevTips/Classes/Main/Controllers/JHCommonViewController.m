@@ -37,6 +37,7 @@
     // 设置tableView属性
     self.tableView.backgroundColor = JHGlobalBg;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.sectionIndexColor = [UIColor clearColor];
     self.tableView.sectionFooterHeight = JHStatusCellInset;
     self.tableView.sectionHeaderHeight = JHStatusCellInset;
     self.tableView.contentInset = UIEdgeInsetsMake(JHStatusCellInset, 0, 0, 0);
@@ -74,6 +75,12 @@
 {
     JHCommonGroup *group = self.groups[section];
     return group.header;
+}
+
+//section底部间距
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return JHStatusCellInset;
 }
 
 #pragma mark - Table view delegate

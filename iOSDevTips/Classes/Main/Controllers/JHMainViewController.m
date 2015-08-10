@@ -11,6 +11,7 @@
 #import "JHCommonArrowItem.h"
 #import "JHSysPhotoAlbumVc.h"
 #import "JHCustomPhotoAlbumVc.h"
+#import "JHImageCaptureViewController.h"
 
 @interface JHMainViewController ()
 
@@ -33,6 +34,7 @@
 - (void)setupGroups
 {
     [self setupGroup0];
+    [self setupGroup1];
 }
 
 - (void)setupGroup0
@@ -50,6 +52,20 @@
 
     
     group.items = @[saveToSysPhotoAlbum, saveToCustomPhotoAlbum];
+}
+
+- (void)setupGroup1
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"截取图片";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *imageCapture = [JHCommonArrowItem itemWithTitle:@"截取图片"];
+    imageCapture.destVcClass = [JHImageCaptureViewController class];
+    
+    group.items = @[imageCapture];
 }
 
 

@@ -32,6 +32,7 @@
 		7DAF50021B78998400D314CD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FF81B78998400D314CD /* UIImage+Extension.m */; };
 		7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FFB1B78998400D314CD /* UIView+Extension.m */; };
 		7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */; };
+		7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		7DAF4FFB1B78998400D314CD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		7DAF50051B78999600D314CD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		7DAF50091B789A2800D314CD /* JHImageCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImageCaptureViewController.h; sourceTree = "<group>"; };
+		7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageCaptureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DAF50081B7899EB00D314CD /* ImageCapture */,
 				7DAF4FA11B78404500D314CD /* PhotoAlbum */,
 				7DAF4F8D1B783FDE00D314CD /* Main */,
 			);
@@ -329,6 +333,15 @@
 			path = UIBarButtonItemCategory;
 			sourceTree = "<group>";
 		};
+		7DAF50081B7899EB00D314CD /* ImageCapture */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF50091B789A2800D314CD /* JHImageCaptureViewController.h */,
+				7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */,
+			);
+			name = ImageCapture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +386,7 @@
 		7DAF4F4F1B78393A00D314CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JH;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = piglikeyoung;
 				TargetAttributes = {
@@ -431,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAF50001B78998400D314CD /* NSString+File.m in Sources */,
+				7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */,
 				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
 				7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */,
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
