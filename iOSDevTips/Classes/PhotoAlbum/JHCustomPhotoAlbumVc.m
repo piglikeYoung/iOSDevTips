@@ -9,6 +9,9 @@
 #import "JHCustomPhotoAlbumVc.h"
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
 
+
+static NSString *albumName = @"ppppppkkkkkk";
+
 @interface JHCustomPhotoAlbumVc ()
 
 @property (nonatomic, strong) ALAssetsLibrary *library;
@@ -39,7 +42,7 @@
     // 创建相册
     [alert addAction:[UIAlertAction actionWithTitle:@"创建自己的相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
-        [self.library addAssetsGroupAlbumWithName:@"pig" resultBlock:^(ALAssetsGroup *group)    {
+        [self.library addAssetsGroupAlbumWithName:albumName resultBlock:^(ALAssetsGroup *group)    {
             //创建相簿成功
             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"创建成功"
                                                            message:@"在相簿中可以看到"
@@ -60,9 +63,10 @@
     // 保存相片到自定义相册，代码过于复杂，所以使用github上ALAssetsLibrary+CustomPhotoAlbum
     [alert addAction:[UIAlertAction actionWithTitle:@"保存相片到自定义相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
+        
         UIImage *image = [UIImage imageNamed:@"navigationbar_back_highlighted"];
         
-        [self.library saveImage:image toAlbum:@"pig" completion:^(NSURL *assetURL, NSError *error) {
+        [self.library saveImage:image toAlbum:albumName completion:^(NSURL *assetURL, NSError *error) {
             if (!error) {
                 UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"保存成功"
                                                                message:@"在相册中可以看到"
@@ -72,8 +76,8 @@
                 [alert show];
             }
         } failure:^(NSError *error) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"保存失败"
-                                                           message:[NSString stringWithFormat:@"%@", error.description]
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"相册不存在"
+                                                           message:@"需要先创建相册"
                                                           delegate:nil
                                                  cancelButtonTitle:@"确定"
                                                  otherButtonTitles:nil, nil];
