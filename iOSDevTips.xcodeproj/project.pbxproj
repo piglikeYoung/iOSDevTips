@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7DAF4F5D1B78393A00D314CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F5C1B78393A00D314CD /* main.m */; };
-		7DAF4F601B78393A00D314CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F5F1B78393A00D314CD /* AppDelegate.m */; };
-		7DAF4F631B78393A00D314CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F621B78393A00D314CD /* ViewController.m */; };
 		7DAF4F661B78393A00D314CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F641B78393A00D314CD /* Main.storyboard */; };
 		7DAF4F681B78393A00D314CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F671B78393A00D314CD /* Images.xcassets */; };
 		7DAF4F6B1B78393A00D314CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F691B78393A00D314CD /* LaunchScreen.xib */; };
 		7DAF4F771B78393A00D314CD /* iOSDevTipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F761B78393A00D314CD /* iOSDevTipsTests.m */; };
+		7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F901B783FDE00D314CD /* JHNavigationController.m */; };
+		7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F921B783FDE00D314CD /* JHMainViewController.m */; };
+		7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F951B783FDE00D314CD /* AppDelegate.m */; };
+		7DAF4FA41B78404500D314CD /* PhotoAlbumVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA31B78404500D314CD /* PhotoAlbumVc.m */; };
+		7DAF4FA81B7840CA00D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */; };
+		7DAF4FAB1B7840D700D314CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */; };
+		7DAF4FAF1B7845EF00D314CD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */; };
+		7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FB11B784E2A00D314CD /* JHCommonViewController.m */; };
+		7DAF4FB61B784F7000D314CD /* JHCommonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FB51B784F7000D314CD /* JHCommonGroup.m */; };
+		7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FB81B784FC700D314CD /* JHCommonItem.m */; };
+		7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FBB1B784FFA00D314CD /* JHCommonArrowItem.m */; };
+		7DAF4FBF1B7850F700D314CD /* JHCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FBE1B7850F700D314CD /* JHCommonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +40,37 @@
 		7DAF4F571B78393A00D314CD /* iOSDevTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDevTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAF4F5B1B78393A00D314CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAF4F5C1B78393A00D314CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7DAF4F5E1B78393A00D314CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7DAF4F5F1B78393A00D314CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7DAF4F611B78393A00D314CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7DAF4F621B78393A00D314CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7DAF4F651B78393A00D314CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DAF4F671B78393A00D314CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7DAF4F6A1B78393A00D314CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7DAF4F701B78393A00D314CD /* iOSDevTipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDevTipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAF4F751B78393A00D314CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAF4F761B78393A00D314CD /* iOSDevTipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDevTipsTests.m; sourceTree = "<group>"; };
+		7DAF4F8F1B783FDE00D314CD /* JHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
+		7DAF4F901B783FDE00D314CD /* JHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
+		7DAF4F911B783FDE00D314CD /* JHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainViewController.h; sourceTree = "<group>"; };
+		7DAF4F921B783FDE00D314CD /* JHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainViewController.m; sourceTree = "<group>"; };
+		7DAF4F941B783FDE00D314CD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DAF4F951B783FDE00D314CD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DAF4FA21B78404500D314CD /* PhotoAlbumVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumVc.h; sourceTree = "<group>"; };
+		7DAF4FA31B78404500D314CD /* PhotoAlbumVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumVc.m; sourceTree = "<group>"; };
+		7DAF4FA61B7840CA00D314CD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		7DAF4FA91B7840D700D314CD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		7DAF4FAC1B7841B700D314CD /* JHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPrefixHeader.pch; sourceTree = "<group>"; };
+		7DAF4FAD1B7845EF00D314CD /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		7DAF4FB01B784E2A00D314CD /* JHCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonViewController.h; sourceTree = "<group>"; };
+		7DAF4FB11B784E2A00D314CD /* JHCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCommonViewController.m; sourceTree = "<group>"; };
+		7DAF4FB41B784F7000D314CD /* JHCommonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonGroup.h; sourceTree = "<group>"; };
+		7DAF4FB51B784F7000D314CD /* JHCommonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCommonGroup.m; sourceTree = "<group>"; };
+		7DAF4FB71B784FC700D314CD /* JHCommonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonItem.h; sourceTree = "<group>"; };
+		7DAF4FB81B784FC700D314CD /* JHCommonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCommonItem.m; sourceTree = "<group>"; };
+		7DAF4FBA1B784FFA00D314CD /* JHCommonArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonArrowItem.h; sourceTree = "<group>"; };
+		7DAF4FBB1B784FFA00D314CD /* JHCommonArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCommonArrowItem.m; sourceTree = "<group>"; };
+		7DAF4FBD1B7850F700D314CD /* JHCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonCell.h; sourceTree = "<group>"; };
+		7DAF4FBE1B7850F700D314CD /* JHCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCommonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +112,7 @@
 		7DAF4F591B78393A00D314CD /* iOSDevTips */ = {
 			isa = PBXGroup;
 			children = (
-				7DAF4F5E1B78393A00D314CD /* AppDelegate.h */,
-				7DAF4F5F1B78393A00D314CD /* AppDelegate.m */,
-				7DAF4F611B78393A00D314CD /* ViewController.h */,
-				7DAF4F621B78393A00D314CD /* ViewController.m */,
+				7DAF4F8B1B783E4A00D314CD /* Classes */,
 				7DAF4F641B78393A00D314CD /* Main.storyboard */,
 				7DAF4F671B78393A00D314CD /* Images.xcassets */,
 				7DAF4F691B78393A00D314CD /* LaunchScreen.xib */,
@@ -98,6 +126,7 @@
 			children = (
 				7DAF4F5B1B78393A00D314CD /* Info.plist */,
 				7DAF4F5C1B78393A00D314CD /* main.m */,
+				7DAF4FAC1B7841B700D314CD /* JHPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +146,85 @@
 				7DAF4F751B78393A00D314CD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FA11B78404500D314CD /* PhotoAlbum */,
+				7DAF4F8D1B783FDE00D314CD /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DAF4F8D1B783FDE00D314CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FB31B784F4500D314CD /* Common */,
+				7DAF4FA51B7840B100D314CD /* Category */,
+				7DAF4F8E1B783FDE00D314CD /* Controllers */,
+				7DAF4F931B783FDE00D314CD /* Others */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7DAF4F8E1B783FDE00D314CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4F8F1B783FDE00D314CD /* JHNavigationController.h */,
+				7DAF4F901B783FDE00D314CD /* JHNavigationController.m */,
+				7DAF4FB01B784E2A00D314CD /* JHCommonViewController.h */,
+				7DAF4FB11B784E2A00D314CD /* JHCommonViewController.m */,
+				7DAF4F911B783FDE00D314CD /* JHMainViewController.h */,
+				7DAF4F921B783FDE00D314CD /* JHMainViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7DAF4F931B783FDE00D314CD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4F941B783FDE00D314CD /* AppDelegate.h */,
+				7DAF4F951B783FDE00D314CD /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		7DAF4FA11B78404500D314CD /* PhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FA21B78404500D314CD /* PhotoAlbumVc.h */,
+				7DAF4FA31B78404500D314CD /* PhotoAlbumVc.m */,
+			);
+			path = PhotoAlbum;
+			sourceTree = "<group>";
+		};
+		7DAF4FA51B7840B100D314CD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FA91B7840D700D314CD /* UIView+Extension.h */,
+				7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */,
+				7DAF4FA61B7840CA00D314CD /* UIBarButtonItem+Extension.h */,
+				7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */,
+				7DAF4FAD1B7845EF00D314CD /* UIImage+Extension.h */,
+				7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7DAF4FB31B784F4500D314CD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FB41B784F7000D314CD /* JHCommonGroup.h */,
+				7DAF4FB51B784F7000D314CD /* JHCommonGroup.m */,
+				7DAF4FB71B784FC700D314CD /* JHCommonItem.h */,
+				7DAF4FB81B784FC700D314CD /* JHCommonItem.m */,
+				7DAF4FBA1B784FFA00D314CD /* JHCommonArrowItem.h */,
+				7DAF4FBB1B784FFA00D314CD /* JHCommonArrowItem.m */,
+				7DAF4FBD1B7850F700D314CD /* JHCommonCell.h */,
+				7DAF4FBE1B7850F700D314CD /* JHCommonCell.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +327,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DAF4F631B78393A00D314CD /* ViewController.m in Sources */,
-				7DAF4F601B78393A00D314CD /* AppDelegate.m in Sources */,
+				7DAF4FA81B7840CA00D314CD /* UIBarButtonItem+Extension.m in Sources */,
+				7DAF4FA41B78404500D314CD /* PhotoAlbumVc.m in Sources */,
+				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
+				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
+				7DAF4FAB1B7840D700D314CD /* UIView+Extension.m in Sources */,
+				7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */,
+				7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */,
+				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
+				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
+				7DAF4FB61B784F7000D314CD /* JHCommonGroup.m in Sources */,
+				7DAF4FAF1B7845EF00D314CD /* UIImage+Extension.m in Sources */,
+				7DAF4FBF1B7850F700D314CD /* JHCommonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSDevTips/JHPrefixHeader.pch";
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +479,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSDevTips/JHPrefixHeader.pch";
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

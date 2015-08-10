@@ -1,0 +1,54 @@
+//
+//  JHPrefixHeader.pch
+//  iOSDevTips
+//
+//  Created by piglikeyoung on 15/8/10.
+//  Copyright (c) 2015年 piglikeyoung. All rights reserved.
+//
+
+#ifndef iOSDevTips_JHPrefixHeader_pch
+#define iOSDevTips_JHPrefixHeader_pch
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIImage+Extension.h"
+
+//-------------调试相关------------
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define JHLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define JHLog(...)
+#endif
+
+// 随机色
+#define JHRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+// 颜色
+#define JHColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 是否为iOS8
+#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+
+// 屏幕尺寸
+#define JHScreenW [UIScreen mainScreen].bounds.size.width
+
+
+
+//----------------界面设置相关---------------
+// 全局背景色
+#define JHGlobalBg JHColor(211, 211, 211)
+
+// cell的计算参数
+// cell的内边距
+#define JHStatusCellInset 20
+
+// 导航栏标题的字体
+#define JHNavigationTitleFont [UIFont boldSystemFontOfSize:20]
+
+// 是否为4inch
+#define FourInch ([UIScreen mainScreen].bounds.size.height == 568.0)
+
+#endif
