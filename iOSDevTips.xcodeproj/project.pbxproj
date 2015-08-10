@@ -16,9 +16,6 @@
 		7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F921B783FDE00D314CD /* JHMainViewController.m */; };
 		7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F951B783FDE00D314CD /* AppDelegate.m */; };
 		7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA31B78404500D314CD /* JHSysPhotoAlbumVc.m */; };
-		7DAF4FA81B7840CA00D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */; };
-		7DAF4FAB1B7840D700D314CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */; };
-		7DAF4FAF1B7845EF00D314CD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */; };
 		7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FB11B784E2A00D314CD /* JHCommonViewController.m */; };
 		7DAF4FB61B784F7000D314CD /* JHCommonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FB51B784F7000D314CD /* JHCommonGroup.m */; };
 		7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FB81B784FC700D314CD /* JHCommonItem.m */; };
@@ -26,6 +23,15 @@
 		7DAF4FBF1B7850F700D314CD /* JHCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FBE1B7850F700D314CD /* JHCommonCell.m */; };
 		7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FC11B787AFD00D314CD /* JHCustomPhotoAlbumVc.m */; };
 		7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FC61B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		7DAF4FFC1B78998400D314CD /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FE91B78998400D314CD /* Foundation+Log.m */; };
+		7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FEC1B78998400D314CD /* NSDate+Extension.m */; };
+		7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FEF1B78998400D314CD /* NSString+Emoji.m */; };
+		7DAF4FFF1B78998400D314CD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FF11B78998400D314CD /* NSString+Extension.m */; };
+		7DAF50001B78998400D314CD /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FF31B78998400D314CD /* NSString+File.m */; };
+		7DAF50011B78998400D314CD /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FF51B78998400D314CD /* NSString+Hash.m */; };
+		7DAF50021B78998400D314CD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FF81B78998400D314CD /* UIImage+Extension.m */; };
+		7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FFB1B78998400D314CD /* UIView+Extension.m */; };
+		7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +62,7 @@
 		7DAF4F951B783FDE00D314CD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7DAF4FA21B78404500D314CD /* JHSysPhotoAlbumVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSysPhotoAlbumVc.h; sourceTree = "<group>"; };
 		7DAF4FA31B78404500D314CD /* JHSysPhotoAlbumVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSysPhotoAlbumVc.m; sourceTree = "<group>"; };
-		7DAF4FA61B7840CA00D314CD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
-		7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
-		7DAF4FA91B7840D700D314CD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		7DAF4FAC1B7841B700D314CD /* JHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPrefixHeader.pch; sourceTree = "<group>"; };
-		7DAF4FAD1B7845EF00D314CD /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
-		7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		7DAF4FB01B784E2A00D314CD /* JHCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonViewController.h; sourceTree = "<group>"; };
 		7DAF4FB11B784E2A00D314CD /* JHCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCommonViewController.m; sourceTree = "<group>"; };
 		7DAF4FB41B784F7000D314CD /* JHCommonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCommonGroup.h; sourceTree = "<group>"; };
@@ -77,6 +77,23 @@
 		7DAF4FC11B787AFD00D314CD /* JHCustomPhotoAlbumVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCustomPhotoAlbumVc.m; sourceTree = "<group>"; };
 		7DAF4FC51B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		7DAF4FC61B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		7DAF4FE91B78998400D314CD /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		7DAF4FEB1B78998400D314CD /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FEC1B78998400D314CD /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		7DAF4FEE1B78998400D314CD /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		7DAF4FEF1B78998400D314CD /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		7DAF4FF01B78998400D314CD /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FF11B78998400D314CD /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		7DAF4FF21B78998400D314CD /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		7DAF4FF31B78998400D314CD /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		7DAF4FF41B78998400D314CD /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		7DAF4FF51B78998400D314CD /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		7DAF4FF71B78998400D314CD /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FF81B78998400D314CD /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		7DAF4FFA1B78998400D314CD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7DAF4FFB1B78998400D314CD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		7DAF50051B78999600D314CD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,12 +228,12 @@
 		7DAF4FA51B7840B100D314CD /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				7DAF4FA91B7840D700D314CD /* UIView+Extension.h */,
-				7DAF4FAA1B7840D700D314CD /* UIView+Extension.m */,
-				7DAF4FA61B7840CA00D314CD /* UIBarButtonItem+Extension.h */,
-				7DAF4FA71B7840CA00D314CD /* UIBarButtonItem+Extension.m */,
-				7DAF4FAD1B7845EF00D314CD /* UIImage+Extension.h */,
-				7DAF4FAE1B7845EF00D314CD /* UIImage+Extension.m */,
+				7DAF50041B78999600D314CD /* UIBarButtonItemCategory */,
+				7DAF4FE81B78998400D314CD /* Log */,
+				7DAF4FEA1B78998400D314CD /* NSDateCategory */,
+				7DAF4FED1B78998400D314CD /* NSStringCategory */,
+				7DAF4FF61B78998400D314CD /* UIImageCategory */,
+				7DAF4FF91B78998400D314CD /* UIViewCategory */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -251,6 +268,65 @@
 				7DAF4FC61B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m */,
 			);
 			path = "ALAssetsLibrary-CustomPhotoAlbum";
+			sourceTree = "<group>";
+		};
+		7DAF4FE81B78998400D314CD /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FE91B78998400D314CD /* Foundation+Log.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		7DAF4FEA1B78998400D314CD /* NSDateCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FEB1B78998400D314CD /* NSDate+Extension.h */,
+				7DAF4FEC1B78998400D314CD /* NSDate+Extension.m */,
+			);
+			path = NSDateCategory;
+			sourceTree = "<group>";
+		};
+		7DAF4FED1B78998400D314CD /* NSStringCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FEE1B78998400D314CD /* NSString+Emoji.h */,
+				7DAF4FEF1B78998400D314CD /* NSString+Emoji.m */,
+				7DAF4FF01B78998400D314CD /* NSString+Extension.h */,
+				7DAF4FF11B78998400D314CD /* NSString+Extension.m */,
+				7DAF4FF21B78998400D314CD /* NSString+File.h */,
+				7DAF4FF31B78998400D314CD /* NSString+File.m */,
+				7DAF4FF41B78998400D314CD /* NSString+Hash.h */,
+				7DAF4FF51B78998400D314CD /* NSString+Hash.m */,
+			);
+			path = NSStringCategory;
+			sourceTree = "<group>";
+		};
+		7DAF4FF61B78998400D314CD /* UIImageCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FF71B78998400D314CD /* UIImage+Extension.h */,
+				7DAF4FF81B78998400D314CD /* UIImage+Extension.m */,
+			);
+			path = UIImageCategory;
+			sourceTree = "<group>";
+		};
+		7DAF4FF91B78998400D314CD /* UIViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF4FFA1B78998400D314CD /* UIView+Extension.h */,
+				7DAF4FFB1B78998400D314CD /* UIView+Extension.m */,
+			);
+			path = UIViewCategory;
+			sourceTree = "<group>";
+		};
+		7DAF50041B78999600D314CD /* UIBarButtonItemCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF50051B78999600D314CD /* UIBarButtonItem+Extension.h */,
+				7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */,
+			);
+			path = UIBarButtonItemCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,21 +430,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DAF4FA81B7840CA00D314CD /* UIBarButtonItem+Extension.m in Sources */,
+				7DAF50001B78998400D314CD /* NSString+File.m in Sources */,
+				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
+				7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */,
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
-				7DAF4FAB1B7840D700D314CD /* UIView+Extension.m in Sources */,
 				7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
+				7DAF50021B78998400D314CD /* UIImage+Extension.m in Sources */,
 				7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */,
 				7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */,
+				7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */,
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
 				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
 				7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */,
+				7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */,
+				7DAF50011B78998400D314CD /* NSString+Hash.m in Sources */,
+				7DAF4FFC1B78998400D314CD /* Foundation+Log.m in Sources */,
 				7DAF4FB61B784F7000D314CD /* JHCommonGroup.m in Sources */,
-				7DAF4FAF1B7845EF00D314CD /* UIImage+Extension.m in Sources */,
 				7DAF4FBF1B7850F700D314CD /* JHCommonCell.m in Sources */,
+				7DAF4FFF1B78998400D314CD /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
