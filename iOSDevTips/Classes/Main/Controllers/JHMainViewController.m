@@ -12,6 +12,7 @@
 #import "JHSysPhotoAlbumVc.h"
 #import "JHCustomPhotoAlbumVc.h"
 #import "JHImageCaptureViewController.h"
+#import "JHAsyncSocketVc.h"
 
 @interface JHMainViewController ()
 
@@ -35,6 +36,7 @@
 {
     [self setupGroup0];
     [self setupGroup1];
+    [self setupGroup2];
 }
 
 - (void)setupGroup0
@@ -66,6 +68,20 @@
     imageCapture.destVcClass = [JHImageCaptureViewController class];
     
     group.items = @[imageCapture];
+}
+
+- (void)setupGroup2
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"AsyncSocket长链接";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *asyncSocket = [JHCommonArrowItem itemWithTitle:@"AsyncSocket长链接"];
+    asyncSocket.destVcClass = [JHAsyncSocketVc class];
+    
+    group.items = @[asyncSocket];
 }
 
 
