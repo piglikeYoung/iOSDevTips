@@ -13,6 +13,7 @@
 #import "JHCustomPhotoAlbumVc.h"
 #import "JHImageCaptureViewController.h"
 #import "JHAsyncSocketVc.h"
+#import "JHPlaceholderTextViewVc.h"
 
 @interface JHMainViewController ()
 
@@ -37,6 +38,7 @@
     [self setupGroup0];
     [self setupGroup1];
     [self setupGroup2];
+    [self setupGroup3];
 }
 
 - (void)setupGroup0
@@ -84,5 +86,18 @@
     group.items = @[asyncSocket];
 }
 
+- (void)setupGroup3
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"实现placeholder属性的UITextView";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *placeholderTextView = [JHCommonArrowItem itemWithTitle:@"实现placeholder属性的UITextView"];
+    placeholderTextView.destVcClass = [JHPlaceholderTextViewVc class];
+    
+    group.items = @[placeholderTextView];
+}
 
 @end

@@ -36,6 +36,8 @@
 		7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */; };
 		7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */; };
 		7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */; };
+		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
+		7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBC01B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,10 @@
 		7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSocketServer.m; sourceTree = "<group>"; };
 		7DE9CBB81B799A5C00FA7DE7 /* JHAsyncSocketVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAsyncSocketVc.h; sourceTree = "<group>"; };
 		7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAsyncSocketVc.m; sourceTree = "<group>"; };
+		7DE9CBBC1B79FF6500FA7DE7 /* JHTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTextView.h; sourceTree = "<group>"; };
+		7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTextView.m; sourceTree = "<group>"; };
+		7DE9CBBF1B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPlaceholderTextViewVc.h; sourceTree = "<group>"; };
+		7DE9CBC01B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPlaceholderTextViewVc.m; sourceTree = "<group>"; };
 		BBE044C142EA45CAFC03FE6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +205,7 @@
 		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DE9CBBB1B79FF3400FA7DE7 /* PlacehoderTextView */,
 				7DE9CBB41B7992E800FA7DE7 /* AsyncSocket */,
 				7DAF50081B7899EB00D314CD /* ImageCapture */,
 				7DAF4FA11B78404500D314CD /* PhotoAlbum */,
@@ -376,6 +383,17 @@
 			path = AsyncSocket;
 			sourceTree = "<group>";
 		};
+		7DE9CBBB1B79FF3400FA7DE7 /* PlacehoderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7DE9CBBC1B79FF6500FA7DE7 /* JHTextView.h */,
+				7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */,
+				7DE9CBBF1B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.h */,
+				7DE9CBC01B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m */,
+			);
+			path = PlacehoderTextView;
+			sourceTree = "<group>";
+		};
 		A051F8B6ADA79DD8426649C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,12 +547,14 @@
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
 				7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
+				7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */,
 				7DAF50021B78998400D314CD /* UIImage+Extension.m in Sources */,
 				7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */,
 				7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */,
 				7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */,
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */,
+				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
 				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
 				7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */,

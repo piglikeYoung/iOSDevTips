@@ -12,6 +12,7 @@
 #import "UIView+Extension.h"
 #import "UIBarButtonItem+Extension.h"
 #import "UIImage+Extension.h"
+#import "NSString+Extension.h"
 
 //-------------调试相关------------
 #ifdef DEBUG // 调试状态, 打开LOG功能
