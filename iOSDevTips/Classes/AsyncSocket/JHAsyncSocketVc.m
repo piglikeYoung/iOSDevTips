@@ -19,8 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = JHGlobalBg;
-    
     JHSocketServer *server = [JHSocketServer sharedSocketServer];
     //socket连接前先断开连接以免之前socket连接没有断开导致闪退
     [server cutOffSocket];

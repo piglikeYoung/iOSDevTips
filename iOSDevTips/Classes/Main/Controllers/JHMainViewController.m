@@ -14,6 +14,7 @@
 #import "JHImageCaptureViewController.h"
 #import "JHAsyncSocketVc.h"
 #import "JHPlaceholderTextViewVc.h"
+#import "JHPopVc.h"
 
 @interface JHMainViewController ()
 
@@ -39,6 +40,7 @@
     [self setupGroup1];
     [self setupGroup2];
     [self setupGroup3];
+    [self setupGroup4];
 }
 
 - (void)setupGroup0
@@ -98,6 +100,20 @@
     placeholderTextView.destVcClass = [JHPlaceholderTextViewVc class];
     
     group.items = @[placeholderTextView];
+}
+
+- (void)setupGroup4
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"POP使用实践";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *pop = [JHCommonArrowItem itemWithTitle:@"POP使用实践"];
+    pop.destVcClass = [JHPopVc class];
+    
+    group.items = @[pop];
 }
 
 @end

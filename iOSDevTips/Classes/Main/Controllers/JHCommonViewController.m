@@ -94,6 +94,7 @@
     if (item.destVcClass) {
         UIViewController *destVc = [[item.destVcClass alloc] init];
         destVc.title = item.title;
+        destVc.view.backgroundColor = JHGlobalBg;
         [self.navigationController pushViewController:destVc animated:YES];
     }
     

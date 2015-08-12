@@ -35,6 +35,7 @@
 		7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */; };
 		7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */; };
 		7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551551B7AE4B70068CD81 /* HMNavigationController.m */; };
+		7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551591B7B14CE0068CD81 /* JHPopVc.m */; };
 		7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */; };
 		7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */; };
 		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
@@ -107,6 +108,8 @@
 		7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageCaptureViewController.m; sourceTree = "<group>"; };
 		7DE551541B7AE4B70068CD81 /* HMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
 		7DE551551B7AE4B70068CD81 /* HMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNavigationController.m; sourceTree = "<group>"; };
+		7DE551581B7B14CE0068CD81 /* JHPopVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPopVc.h; sourceTree = "<group>"; };
+		7DE551591B7B14CE0068CD81 /* JHPopVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPopVc.m; sourceTree = "<group>"; };
 		7DE9CBB51B7993B500FA7DE7 /* JHSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSocketServer.h; sourceTree = "<group>"; };
 		7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSocketServer.m; sourceTree = "<group>"; };
 		7DE9CBB81B799A5C00FA7DE7 /* JHAsyncSocketVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAsyncSocketVc.h; sourceTree = "<group>"; };
@@ -208,6 +211,7 @@
 		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DE551571B7B14AF0068CD81 /* Pop */,
 				7DE9CBBB1B79FF3400FA7DE7 /* PlacehoderTextView */,
 				7DE9CBB41B7992E800FA7DE7 /* AsyncSocket */,
 				7DAF50081B7899EB00D314CD /* ImageCapture */,
@@ -375,6 +379,15 @@
 				7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */,
 			);
 			path = ImageCapture;
+			sourceTree = "<group>";
+		};
+		7DE551571B7B14AF0068CD81 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				7DE551581B7B14CE0068CD81 /* JHPopVc.h */,
+				7DE551591B7B14CE0068CD81 /* JHPopVc.m */,
+			);
+			path = Pop;
 			sourceTree = "<group>";
 		};
 		7DE9CBB41B7992E800FA7DE7 /* AsyncSocket */ = {
@@ -558,6 +571,7 @@
 				7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */,
 				7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */,
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
+				7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */,
 				7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,

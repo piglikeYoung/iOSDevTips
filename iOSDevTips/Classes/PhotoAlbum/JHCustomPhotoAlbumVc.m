@@ -31,8 +31,6 @@ static NSString *albumName = @"ppppppkkkkkk";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = JHGlobalBg;
-    
     self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navigationbar_more" highImageName:@"navigationbar_more_highlighted" target:self action:@selector(more)];
 }
 

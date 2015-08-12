@@ -18,8 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = JHGlobalBg;
-    
     JHTextView *textView = [[JHTextView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     textView.placehoder = @"请输入内容。。。。。";
     textView.placehoderColor = [UIColor blueColor];

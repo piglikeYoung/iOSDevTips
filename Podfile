@@ -5,3 +5,4 @@ inhibit_all_warnings!
 
 pod 'SDWebImage'
 pod 'CocoaAsyncSocket'
+pod 'pop', '~> 1.0'
