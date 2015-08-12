@@ -34,6 +34,7 @@
 		7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4FFB1B78998400D314CD /* UIView+Extension.m */; };
 		7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */; };
 		7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */; };
+		7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551551B7AE4B70068CD81 /* HMNavigationController.m */; };
 		7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */; };
 		7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */; };
 		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
@@ -104,6 +105,8 @@
 		7DAF50061B78999600D314CD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		7DAF50091B789A2800D314CD /* JHImageCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImageCaptureViewController.h; sourceTree = "<group>"; };
 		7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageCaptureViewController.m; sourceTree = "<group>"; };
+		7DE551541B7AE4B70068CD81 /* HMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
+		7DE551551B7AE4B70068CD81 /* HMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNavigationController.m; sourceTree = "<group>"; };
 		7DE9CBB51B7993B500FA7DE7 /* JHSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSocketServer.h; sourceTree = "<group>"; };
 		7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSocketServer.m; sourceTree = "<group>"; };
 		7DE9CBB81B799A5C00FA7DE7 /* JHAsyncSocketVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAsyncSocketVc.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 		7DAF4F8E1B783FDE00D314CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7DE551541B7AE4B70068CD81 /* HMNavigationController.h */,
+				7DE551551B7AE4B70068CD81 /* HMNavigationController.m */,
 				7DAF4F8F1B783FDE00D314CD /* JHNavigationController.h */,
 				7DAF4F901B783FDE00D314CD /* JHNavigationController.m */,
 				7DAF4FB01B784E2A00D314CD /* JHCommonViewController.h */,
@@ -555,6 +560,7 @@
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
+				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
 				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
 				7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */,
