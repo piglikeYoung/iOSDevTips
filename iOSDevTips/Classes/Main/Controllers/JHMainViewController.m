@@ -31,6 +31,7 @@
     [self setupGroups];
 }
 
+
 /**
  *  初始化模型数据
  */
@@ -115,5 +116,6 @@
     
     group.items = @[pop];
 }
+
 
 @end
