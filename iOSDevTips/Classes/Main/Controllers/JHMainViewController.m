@@ -20,6 +20,7 @@
 #import "JHTableCheckmarkVc.h"
 #import "JHTableEditVc.h"
 #import "JHTableSwipeToPerformActionsVc.h"
+#import "JHTableShowMenuVc.h"
 
 @interface JHMainViewController ()
 
@@ -146,7 +147,10 @@
     JHCommonArrowItem *tableSwipeToPerformActions = [JHCommonArrowItem itemWithTitle:@"tableView滑动操作"];
     tableSwipeToPerformActions.destVcClass = [JHTableSwipeToPerformActionsVc class];
     
-    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions];
+    JHCommonArrowItem *tableShowMenu = [JHCommonArrowItem itemWithTitle:@"tableView长按快捷菜单"];
+    tableShowMenu.destVcClass = [JHTableShowMenuVc class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions, tableShowMenu];
 }
 
 
