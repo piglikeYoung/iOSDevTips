@@ -68,8 +68,7 @@
  *  点击菜单上的按钮触发方法
  *
  */
--(void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
-{
+-(void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender{
     
     if (action ==@selector(copy:)) {
         JHLog(@"copy");
@@ -90,7 +89,7 @@
 
 
 /**
- *  每个cell都可以点击出现Menu菜单
+ * Menu菜单可以出现的菜单选项
  *
  */
 -(BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
