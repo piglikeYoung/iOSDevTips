@@ -21,6 +21,7 @@
 #import "JHTableEditVc.h"
 #import "JHTableSwipeToPerformActionsVc.h"
 #import "JHTableShowMenuVc.h"
+#import "JHTableHairGlassVc.h"
 
 @interface JHMainViewController ()
 
@@ -150,7 +151,10 @@
     JHCommonArrowItem *tableShowMenu = [JHCommonArrowItem itemWithTitle:@"tableView长按快捷菜单"];
     tableShowMenu.destVcClass = [JHTableShowMenuVc class];
     
-    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions, tableShowMenu];
+    JHCommonArrowItem *tableHairGlass = [JHCommonArrowItem itemWithTitle:@"tableview+毛玻璃效果"];
+    tableHairGlass.destVcClass = [JHTableHairGlassVc class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions, tableShowMenu, tableHairGlass];
 }
 
 
