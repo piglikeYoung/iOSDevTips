@@ -72,6 +72,11 @@
     
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示"message:titileString delegate:self cancelButtonTitle:@"OK"otherButtonTitles:nil];
     [alert show];
+    
+    // 把点击的tableViewCell的rect转换为父类View的rect，就可以获取点击cell在父类View的位置
+    CGRect popoverRect = [tableView convertRect:[tableView rectForRowAtIndexPath:indexPath] toView:[tableView superview]];
+    
+    JHLog(@"%@", NSStringFromCGRect(popoverRect));
 }
 
 /**
