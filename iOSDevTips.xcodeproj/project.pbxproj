@@ -40,6 +40,9 @@
 		7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */; };
 		7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */; };
 		7DE8FA381B7C47DD00D9A305 /* JHTableEditVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA371B7C47DD00D9A305 /* JHTableEditVc.m */; };
+		7DE8FA3B1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA3A1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m */; };
+		7DE8FA461B7C76C600D9A305 /* SwipeableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA441B7C76C600D9A305 /* SwipeableCell.m */; };
+		7DE8FA471B7C76C600D9A305 /* SwipeableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DE8FA451B7C76C600D9A305 /* SwipeableCell.xib */; };
 		7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */; };
 		7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */; };
 		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
@@ -122,6 +125,11 @@
 		7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableCheckmarkVc.m; sourceTree = "<group>"; };
 		7DE8FA361B7C47DD00D9A305 /* JHTableEditVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableEditVc.h; sourceTree = "<group>"; };
 		7DE8FA371B7C47DD00D9A305 /* JHTableEditVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableEditVc.m; sourceTree = "<group>"; };
+		7DE8FA391B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableSwipeToPerformActionsVc.h; sourceTree = "<group>"; };
+		7DE8FA3A1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableSwipeToPerformActionsVc.m; sourceTree = "<group>"; };
+		7DE8FA431B7C76C600D9A305 /* SwipeableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeableCell.h; sourceTree = "<group>"; };
+		7DE8FA441B7C76C600D9A305 /* SwipeableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeableCell.m; sourceTree = "<group>"; };
+		7DE8FA451B7C76C600D9A305 /* SwipeableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeableCell.xib; sourceTree = "<group>"; };
 		7DE9CBB51B7993B500FA7DE7 /* JHSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSocketServer.h; sourceTree = "<group>"; };
 		7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSocketServer.m; sourceTree = "<group>"; };
 		7DE9CBB81B799A5C00FA7DE7 /* JHAsyncSocketVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAsyncSocketVc.h; sourceTree = "<group>"; };
@@ -406,6 +414,7 @@
 		7DE8FA2C1B7C30F600D9A305 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				7DE8FA3F1B7C74C900D9A305 /* Cell */,
 				7DE8FA2D1B7C318900D9A305 /* JHTableResponseVc.h */,
 				7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */,
 				7DE8FA331B7C3B3F00D9A305 /* JHTableCheckmarkVc.h */,
@@ -414,8 +423,20 @@
 				7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */,
 				7DE8FA361B7C47DD00D9A305 /* JHTableEditVc.h */,
 				7DE8FA371B7C47DD00D9A305 /* JHTableEditVc.m */,
+				7DE8FA391B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.h */,
+				7DE8FA3A1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		7DE8FA3F1B7C74C900D9A305 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7DE8FA431B7C76C600D9A305 /* SwipeableCell.h */,
+				7DE8FA441B7C76C600D9A305 /* SwipeableCell.m */,
+				7DE8FA451B7C76C600D9A305 /* SwipeableCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7DE9CBB41B7992E800FA7DE7 /* AsyncSocket */ = {
@@ -534,6 +555,7 @@
 			files = (
 				7DAF4F661B78393A00D314CD /* Main.storyboard in Resources */,
 				7DAF4F6B1B78393A00D314CD /* LaunchScreen.xib in Resources */,
+				7DE8FA471B7C76C600D9A305 /* SwipeableCell.xib in Resources */,
 				7DAF4F681B78393A00D314CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +612,7 @@
 				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
 				7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */,
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
+				7DE8FA3B1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m in Sources */,
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
 				7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
@@ -602,6 +625,7 @@
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */,
 				7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */,
+				7DE8FA461B7C76C600D9A305 /* SwipeableCell.m in Sources */,
 				7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,
@@ -751,6 +775,10 @@
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -766,6 +794,10 @@
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -19,6 +19,7 @@
 #import "JHTableCustomBtnVc.h"
 #import "JHTableCheckmarkVc.h"
 #import "JHTableEditVc.h"
+#import "JHTableSwipeToPerformActionsVc.h"
 
 @interface JHMainViewController ()
 
@@ -139,10 +140,13 @@
     JHCommonArrowItem *tableCustomBtnResponse = [JHCommonArrowItem itemWithTitle:@"tableView自定义Btn响应事件"];
     tableCustomBtnResponse.destVcClass = [JHTableCustomBtnVc class];
     
-    JHCommonArrowItem *tableEdit = [JHCommonArrowItem itemWithTitle:@"tableView插入"];
+    JHCommonArrowItem *tableEdit = [JHCommonArrowItem itemWithTitle:@"tableView编辑模式"];
     tableEdit.destVcClass = [JHTableEditVc class];
     
-    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit];
+    JHCommonArrowItem *tableSwipeToPerformActions = [JHCommonArrowItem itemWithTitle:@"tableView滑动操作"];
+    tableSwipeToPerformActions.destVcClass = [JHTableSwipeToPerformActionsVc class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions];
 }
 
 
