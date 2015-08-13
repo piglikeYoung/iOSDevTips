@@ -15,6 +15,9 @@
 #import "JHAsyncSocketVc.h"
 #import "JHPlaceholderTextViewVc.h"
 #import "JHPopVc.h"
+#import "JHTableResponseVc.h"
+#import "JHTableCustomBtnVc.h"
+#import "JHTableCheckmarkVc.h"
 
 @interface JHMainViewController ()
 
@@ -42,6 +45,7 @@
     [self setupGroup2];
     [self setupGroup3];
     [self setupGroup4];
+    [self setupGroup5];
 }
 
 - (void)setupGroup0
@@ -115,6 +119,26 @@
     pop.destVcClass = [JHPopVc class];
     
     group.items = @[pop];
+}
+
+- (void)setupGroup5
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"tableView";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *tableResponse = [JHCommonArrowItem itemWithTitle:@"tableView原生详情按钮响应事件"];
+    tableResponse.destVcClass = [JHTableResponseVc class];
+    
+    JHCommonArrowItem *tableCheckmark = [JHCommonArrowItem itemWithTitle:@"tableViewCheckmark"];
+    tableCheckmark.destVcClass = [JHTableCheckmarkVc class];
+    
+    JHCommonArrowItem *tableCustomBtnResponse = [JHCommonArrowItem itemWithTitle:@"tableView自定义Btn响应事件"];
+    tableCustomBtnResponse.destVcClass = [JHTableCustomBtnVc class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse];
 }
 
 
