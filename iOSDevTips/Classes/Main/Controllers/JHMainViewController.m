@@ -22,6 +22,7 @@
 #import "JHTableSwipeToPerformActionsVc.h"
 #import "JHTableShowMenuVc.h"
 #import "JHTableHairGlassVc.h"
+#import "JHTableSwipeToPerformActionsVc2.h"
 
 @interface JHMainViewController ()
 
@@ -154,7 +155,10 @@
     JHCommonArrowItem *tableHairGlass = [JHCommonArrowItem itemWithTitle:@"tableview+毛玻璃效果"];
     tableHairGlass.destVcClass = [JHTableHairGlassVc class];
     
-    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions, tableShowMenu, tableHairGlass];
+    JHCommonArrowItem *tableSwipeToPerformActions2 = [JHCommonArrowItem itemWithTitle:@"tableview滑动操作iOS8版本"];
+    tableSwipeToPerformActions2.destVcClass = [JHTableSwipeToPerformActionsVc2 class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions,tableSwipeToPerformActions2, tableShowMenu, tableHairGlass];
 }
 
 

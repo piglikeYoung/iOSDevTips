@@ -45,6 +45,7 @@
 		7DE8FA471B7C76C600D9A305 /* SwipeableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DE8FA451B7C76C600D9A305 /* SwipeableCell.xib */; };
 		7DE8FA4A1B7C8B3800D9A305 /* JHTableShowMenuVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA491B7C8B3800D9A305 /* JHTableShowMenuVc.m */; };
 		7DE8FA4D1B7C9C1C00D9A305 /* JHTableHairGlassVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA4C1B7C9C1C00D9A305 /* JHTableHairGlassVc.m */; };
+		7DE8FA501B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA4F1B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m */; };
 		7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */; };
 		7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */; };
 		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
@@ -136,6 +137,8 @@
 		7DE8FA491B7C8B3800D9A305 /* JHTableShowMenuVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableShowMenuVc.m; sourceTree = "<group>"; };
 		7DE8FA4B1B7C9C1C00D9A305 /* JHTableHairGlassVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableHairGlassVc.h; sourceTree = "<group>"; };
 		7DE8FA4C1B7C9C1C00D9A305 /* JHTableHairGlassVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableHairGlassVc.m; sourceTree = "<group>"; };
+		7DE8FA4E1B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableSwipeToPerformActionsVc2.h; sourceTree = "<group>"; };
+		7DE8FA4F1B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableSwipeToPerformActionsVc2.m; sourceTree = "<group>"; };
 		7DE9CBB51B7993B500FA7DE7 /* JHSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSocketServer.h; sourceTree = "<group>"; };
 		7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSocketServer.m; sourceTree = "<group>"; };
 		7DE9CBB81B799A5C00FA7DE7 /* JHAsyncSocketVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAsyncSocketVc.h; sourceTree = "<group>"; };
@@ -435,6 +438,8 @@
 				7DE8FA491B7C8B3800D9A305 /* JHTableShowMenuVc.m */,
 				7DE8FA4B1B7C9C1C00D9A305 /* JHTableHairGlassVc.h */,
 				7DE8FA4C1B7C9C1C00D9A305 /* JHTableHairGlassVc.m */,
+				7DE8FA4E1B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.h */,
+				7DE8FA4F1B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -626,6 +631,7 @@
 				7DE8FA3B1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m in Sources */,
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DE8FA4D1B7C9C1C00D9A305 /* JHTableHairGlassVc.m in Sources */,
+				7DE8FA501B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
 				7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */,
