@@ -39,6 +39,7 @@
 		7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */; };
 		7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */; };
 		7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */; };
+		7DE8FA381B7C47DD00D9A305 /* JHTableEditVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA371B7C47DD00D9A305 /* JHTableEditVc.m */; };
 		7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */; };
 		7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBB91B799A5C00FA7DE7 /* JHAsyncSocketVc.m */; };
 		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
@@ -119,6 +120,8 @@
 		7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableCustomBtnVc.m; sourceTree = "<group>"; };
 		7DE8FA331B7C3B3F00D9A305 /* JHTableCheckmarkVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableCheckmarkVc.h; sourceTree = "<group>"; };
 		7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableCheckmarkVc.m; sourceTree = "<group>"; };
+		7DE8FA361B7C47DD00D9A305 /* JHTableEditVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableEditVc.h; sourceTree = "<group>"; };
+		7DE8FA371B7C47DD00D9A305 /* JHTableEditVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableEditVc.m; sourceTree = "<group>"; };
 		7DE9CBB51B7993B500FA7DE7 /* JHSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSocketServer.h; sourceTree = "<group>"; };
 		7DE9CBB61B7993B500FA7DE7 /* JHSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSocketServer.m; sourceTree = "<group>"; };
 		7DE9CBB81B799A5C00FA7DE7 /* JHAsyncSocketVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAsyncSocketVc.h; sourceTree = "<group>"; };
@@ -409,6 +412,8 @@
 				7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */,
 				7DE8FA301B7C36B500D9A305 /* JHTableCustomBtnVc.h */,
 				7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */,
+				7DE8FA361B7C47DD00D9A305 /* JHTableEditVc.h */,
+				7DE8FA371B7C47DD00D9A305 /* JHTableEditVc.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -600,6 +605,7 @@
 				7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,
+				7DE8FA381B7C47DD00D9A305 /* JHTableEditVc.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
 				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
 				7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */,

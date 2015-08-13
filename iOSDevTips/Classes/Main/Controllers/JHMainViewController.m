@@ -18,6 +18,7 @@
 #import "JHTableResponseVc.h"
 #import "JHTableCustomBtnVc.h"
 #import "JHTableCheckmarkVc.h"
+#import "JHTableEditVc.h"
 
 @interface JHMainViewController ()
 
@@ -138,7 +139,10 @@
     JHCommonArrowItem *tableCustomBtnResponse = [JHCommonArrowItem itemWithTitle:@"tableView自定义Btn响应事件"];
     tableCustomBtnResponse.destVcClass = [JHTableCustomBtnVc class];
     
-    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse];
+    JHCommonArrowItem *tableEdit = [JHCommonArrowItem itemWithTitle:@"tableView插入"];
+    tableEdit.destVcClass = [JHTableEditVc class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit];
 }
 
 
