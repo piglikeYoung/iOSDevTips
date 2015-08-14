@@ -23,6 +23,7 @@
 #import "JHTableShowMenuVc.h"
 #import "JHTableHairGlassVc.h"
 #import "JHTableSwipeToPerformActionsVc2.h"
+#import "JHTableMovingCellVc.h"
 
 @interface JHMainViewController ()
 
@@ -158,7 +159,10 @@
     JHCommonArrowItem *tableSwipeToPerformActions2 = [JHCommonArrowItem itemWithTitle:@"tableview滑动操作iOS8版本"];
     tableSwipeToPerformActions2.destVcClass = [JHTableSwipeToPerformActionsVc2 class];
     
-    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions,tableSwipeToPerformActions2, tableShowMenu, tableHairGlass];
+    JHCommonArrowItem *movingTableViewCell= [JHCommonArrowItem itemWithTitle:@"长按移动tableViewCell"];
+    movingTableViewCell.destVcClass = [JHTableMovingCellVc class];
+    
+    group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions,tableSwipeToPerformActions2, tableShowMenu, tableHairGlass, movingTableViewCell];
 }
 
 
