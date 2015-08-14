@@ -24,6 +24,7 @@
 #import "JHTableHairGlassVc.h"
 #import "JHTableSwipeToPerformActionsVc2.h"
 #import "JHTableMovingCellVc.h"
+#import "JHCheckMobileOperator.h"
 
 @interface JHMainViewController ()
 
@@ -38,6 +39,8 @@
     self.title = @"主页";
     
     [self setupGroups];
+    
+    JHLog(@"%@", [JHCheckMobileOperator checkMobileOperator]);
 }
 
 

@@ -36,6 +36,8 @@
 		7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF500A1B789A2800D314CD /* JHImageCaptureViewController.m */; };
 		7DD75B191B7D7C6F00A7D74C /* JHTableMovingCellVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75B181B7D7C6F00A7D74C /* JHTableMovingCellVc.m */; };
 		7DD75B1F1B7DB8EF00A7D74C /* NSString+TransformToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75B1E1B7DB8EF00A7D74C /* NSString+TransformToPinyin.m */; };
+		7DD75B211B7DC30200A7D74C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD75B201B7DC30200A7D74C /* CoreTelephony.framework */; };
+		7DD75B251B7DCE5200A7D74C /* JHCheckMobileOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75B241B7DCE5200A7D74C /* JHCheckMobileOperator.m */; };
 		7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551551B7AE4B70068CD81 /* HMNavigationController.m */; };
 		7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551591B7B14CE0068CD81 /* JHPopVc.m */; };
 		7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */; };
@@ -122,6 +124,9 @@
 		7DD75B181B7D7C6F00A7D74C /* JHTableMovingCellVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableMovingCellVc.m; sourceTree = "<group>"; };
 		7DD75B1D1B7DB8EF00A7D74C /* NSString+TransformToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TransformToPinyin.h"; sourceTree = "<group>"; };
 		7DD75B1E1B7DB8EF00A7D74C /* NSString+TransformToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TransformToPinyin.m"; sourceTree = "<group>"; };
+		7DD75B201B7DC30200A7D74C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7DD75B231B7DCE5200A7D74C /* JHCheckMobileOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCheckMobileOperator.h; sourceTree = "<group>"; };
+		7DD75B241B7DCE5200A7D74C /* JHCheckMobileOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCheckMobileOperator.m; sourceTree = "<group>"; };
 		7DE551541B7AE4B70068CD81 /* HMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
 		7DE551551B7AE4B70068CD81 /* HMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNavigationController.m; sourceTree = "<group>"; };
 		7DE551581B7B14CE0068CD81 /* JHPopVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPopVc.h; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD75B211B7DC30200A7D74C /* CoreTelephony.framework in Frameworks */,
 				127F77EBC0194418E917214A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +266,7 @@
 		7DAF4F8D1B783FDE00D314CD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7DD75B221B7DCDEC00A7D74C /* Utils */,
 				7DAF4FC31B788FED00D314CD /* Lib */,
 				7DAF4FB31B784F4500D314CD /* Common */,
 				7DAF4FA51B7840B100D314CD /* Category */,
@@ -419,6 +426,15 @@
 			path = ImageCapture;
 			sourceTree = "<group>";
 		};
+		7DD75B221B7DCDEC00A7D74C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7DD75B231B7DCE5200A7D74C /* JHCheckMobileOperator.h */,
+				7DD75B241B7DCE5200A7D74C /* JHCheckMobileOperator.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		7DE551571B7B14AF0068CD81 /* Pop */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +505,7 @@
 		A051F8B6ADA79DD8426649C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7DD75B201B7DC30200A7D74C /* CoreTelephony.framework */,
 				4435759273F24E4801974761 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -638,6 +655,7 @@
 				7DD75B191B7D7C6F00A7D74C /* JHTableMovingCellVc.m in Sources */,
 				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
 				7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */,
+				7DD75B251B7DCE5200A7D74C /* JHCheckMobileOperator.m in Sources */,
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
 				7DE8FA3B1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m in Sources */,
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
