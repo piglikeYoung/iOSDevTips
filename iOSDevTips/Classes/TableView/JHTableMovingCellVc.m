@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) NSMutableArray *otherObjects;/**< 第二个section数组 */
 
+@property (strong, nonatomic) NSMutableArray *anotherObjects;/**< 第三个section数组 */
+
 @property (nonatomic, strong) NSMutableArray *total;/**< 总数组 */
 
 @end
@@ -34,9 +36,16 @@
     return _otherObjects;
 }
 
+- (NSMutableArray *)anotherObjects {
+    if (!_anotherObjects) {
+        _anotherObjects = [@[@"Get Milk!", @"Go to gym", @"Breakfast with Rita!", @"Call Bob", @"Pick up newspaper", @"Send an email to Joe", @"Read this tutorial!", @"Pick up flowers"] mutableCopy];
+    }
+    return _anotherObjects;
+}
+
 - (NSMutableArray *)total {
     if (!_total) {
-        _total = [NSMutableArray arrayWithObjects:self.objects, self.otherObjects, nil];
+        _total = [NSMutableArray arrayWithObjects:self.objects, self.otherObjects, self.anotherObjects, nil];
     }
     return _total;
 }
@@ -58,7 +67,7 @@
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return self.total.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
