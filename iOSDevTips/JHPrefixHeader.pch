@@ -37,7 +37,7 @@
 // 屏幕尺寸
 #define JHScreenW [UIScreen mainScreen].bounds.size.width
 #define JHScreenH [UIScreen mainScreen].bounds.size.height
-
+#define JHScreenBounds [UIScreen mainScreen].bounds
 
 
 //----------------界面设置相关---------------

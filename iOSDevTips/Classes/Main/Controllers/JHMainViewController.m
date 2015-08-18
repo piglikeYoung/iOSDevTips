@@ -25,6 +25,7 @@
 #import "JHTableSwipeToPerformActionsVc2.h"
 #import "JHTableMovingCellVc.h"
 #import "JHCheckMobileOperator.h"
+#import "JHBgBlurViewVc.h"
 
 @interface JHMainViewController ()
 
@@ -55,6 +56,7 @@
     [self setupGroup3];
     [self setupGroup4];
     [self setupGroup5];
+    [self setupGroup6];
 }
 
 - (void)setupGroup0
@@ -166,6 +168,20 @@
     movingTableViewCell.destVcClass = [JHTableMovingCellVc class];
     
     group.items = @[tableResponse, tableCheckmark, tableCustomBtnResponse, tableEdit, tableSwipeToPerformActions,tableSwipeToPerformActions2, tableShowMenu, tableHairGlass, movingTableViewCell];
+}
+
+- (void)setupGroup6
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"模仿金融APP进入后台模糊效果";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *bgBlurView = [JHCommonArrowItem itemWithTitle:@"模糊效果"];
+    bgBlurView.destVcClass = [JHBgBlurViewVc class];
+    
+    group.items = @[bgBlurView];
 }
 
 

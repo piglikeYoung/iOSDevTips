@@ -7,39 +7,103 @@
 //
 
 #import "AppDelegate.h"
+#import "FXBlurView.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) FXBlurView *blurView;/**< 毛玻璃View */
+
+@property (nonatomic, strong) UIVisualEffectView *effectView;/**< 系统自带的毛玻璃View */
 
 @end
 
 @implementation AppDelegate
 
+- (FXBlurView *)blurView {
+    if (!_blurView) {
+        _blurView = [[FXBlurView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _blurView.blurRadius = 40;// 模糊度
+    }
+    return _blurView;
+}
+
+- (UIVisualEffectView *)effectView {
+    if (!_effectView) {
+        // 毛玻璃view 视图
+        _effectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+        // 设置模糊透明度
+        _effectView.alpha = 1.f;
+        _effectView.frame = JHScreenBounds;
+    }
+    
+    return _effectView;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
 }
 
+/**
+ *  APP进入后台
+ *
+ */
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    // 当进入后台，添加毛玻璃遮挡
+    [self addBlurEffectWithUIVisualEffectView];
+//    [self addBlurEffectWithFXBlurView];
+    
+    
 }
 
+/**
+ *  APP将进入前台
+ *
+ */
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+
+    // 进入前台移除毛玻璃
+    [self removeBlurEffectWithUIVisualEffectView];
+//    [self removeBlurEffectWithFXBlurView];
+
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+/**
+ *  创建毛玻璃效果View，系统自带的API，iOS8之后可用
+ */
+-(void) addBlurEffectWithUIVisualEffectView {
+    [[[UIApplication sharedApplication] keyWindow] addSubview:self.effectView];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+/**
+ *  移除毛玻璃效果View，配合addBlurEffectWithUIBlurEffect使用
+ */
+-(void) removeBlurEffectWithUIVisualEffectView {
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.effectView removeFromSuperview];
+    }];
+}
+
+
+/**
+ *  创建毛玻璃效果View，通过第三方库FXBlurView，iOS5之后可用
+ */
+-(void)addBlurEffectWithFXBlurView {
+    [[[UIApplication sharedApplication] keyWindow] addSubview:self.blurView];
+}
+
+/**
+ *  移除毛玻璃效果View，配合addBlurEffectWithFXBlurView使用
+ */
+-(void) removeBlurEffectWithFXBlurView {
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.blurView removeFromSuperview];
+    }];
 }
 
 @end
