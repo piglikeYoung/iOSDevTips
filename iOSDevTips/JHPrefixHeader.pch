@@ -14,6 +14,7 @@
 #import "UIImage+Extension.h"
 #import "NSString+Extension.h"
 #import "NSString+TransformToPinyin.h"
+#import "Masonry.h"
 
 //-------------调试相关------------
 #ifdef DEBUG // 调试状态, 打开LOG功能
@@ -42,7 +43,7 @@
 
 //----------------界面设置相关---------------
 // 全局背景色
-#define JHGlobalBg JHColor(211, 211, 211)
+#define JHGlobalBg JHColor(242, 242, 242)
 
 // cell的计算参数
 // cell的内边距

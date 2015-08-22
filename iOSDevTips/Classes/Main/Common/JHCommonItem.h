@@ -19,6 +19,8 @@
 @property (nonatomic, copy) NSString *badgeValue;
 /** 点击这行cell，需要调转到哪个控制器 */
 @property (nonatomic, assign) Class destVcClass;
+/** 是否通过storyboard创建控制器 */
+@property (nonatomic, assign, getter=isInitByStoryBoard) BOOL initByStoryBoard;
 
 /** 封装点击这行cell想做的事情 */
 // block 只能用 copy

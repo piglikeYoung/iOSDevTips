@@ -26,6 +26,7 @@
 #import "JHTableMovingCellVc.h"
 #import "JHCheckMobileOperator.h"
 #import "JHBgBlurViewVc.h"
+#import "JHMasonryCaseVc.h"
 
 @interface JHMainViewController ()
 
@@ -57,6 +58,7 @@
     [self setupGroup4];
     [self setupGroup5];
     [self setupGroup6];
+    [self setupGroup7];
 }
 
 - (void)setupGroup0
@@ -182,6 +184,21 @@
     bgBlurView.destVcClass = [JHBgBlurViewVc class];
     
     group.items = @[bgBlurView];
+}
+
+- (void)setupGroup7
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"有趣的Autolayout示例-Masonry实现";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *masonryCase = [JHCommonArrowItem itemWithTitle:@"MasonryCase"];
+    masonryCase.destVcClass = [JHMasonryCaseVc class];
+    masonryCase.initByStoryBoard = YES;// 通过storyboard创建控制器
+    
+    group.items = @[masonryCase];
 }
 
 

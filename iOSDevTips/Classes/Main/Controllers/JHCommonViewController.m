@@ -40,7 +40,7 @@
     self.tableView.sectionIndexColor = [UIColor clearColor];
     self.tableView.sectionFooterHeight = JHStatusCellInset;
     self.tableView.sectionHeaderHeight = JHStatusCellInset;
-    self.tableView.contentInset = UIEdgeInsetsMake(JHStatusCellInset, 0, 0, 0);
+//    self.tableView.contentInset = UIEdgeInsetsMake(JHStatusCellInset, 0, 0, 0);
 }
 
 #pragma mark - Table view data source
@@ -92,10 +92,20 @@
     
     // 2.判断有无需要跳转的控制器
     if (item.destVcClass) {
-        UIViewController *destVc = [[item.destVcClass alloc] init];
+        
+        UIViewController *destVc = nil;
+        
+        // 判断是否根据storyboard创建
+        if (item.isInitByStoryBoard) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[NSString stringWithFormat:@"%@", item.destVcClass] bundle:nil];
+            destVc = [storyboard instantiateInitialViewController];
+        } else {
+            destVc = [[item.destVcClass alloc] init];
+        }
         destVc.title = item.title;
         destVc.view.backgroundColor = JHGlobalBg;
         [self.navigationController pushViewController:destVc animated:YES];
+        
     }
     
     // 3.判断有无想执行的操作
