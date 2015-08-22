@@ -17,5 +17,10 @@
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
+@property (assign, nonatomic) CGFloat top;
+@property (assign, nonatomic) CGFloat bottom;
+@property (assign, nonatomic) CGFloat left;
+@property (assign, nonatomic) CGFloat right;
+@property (assign, nonatomic) CGPoint origin;
 
 @end

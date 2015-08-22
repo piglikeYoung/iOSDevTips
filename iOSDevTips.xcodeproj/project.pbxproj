@@ -447,7 +447,7 @@
 				7DD75B2A1B7DF65800A7D74C /* NSTimer+EZ_Helper.h */,
 				7DD75B2B1B7DF65800A7D74C /* NSTimer+EZ_Helper.m */,
 			);
-			name = NSTimeCategory;
+			path = NSTimeCategory;
 			sourceTree = "<group>";
 		};
 		7DE551571B7B14AF0068CD81 /* Pop */ = {
