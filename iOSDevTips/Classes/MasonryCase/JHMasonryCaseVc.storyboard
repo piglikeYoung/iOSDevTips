@@ -42,6 +42,9 @@
                                 <state key="normal" title="Case 3：百分比宽度">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oG6-5y-9PW" kind="show" id="hfy-ef-Gub"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxx-hq-zdZ">
                                 <rect key="frame" x="226" y="311" width="147" height="30"/>
@@ -179,6 +182,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pku-w5-2hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1010" y="463"/>
+        </scene>
+        <!--Masonry Case3-->
+        <scene sceneID="Xnn-CN-Ku6">
+            <objects>
+                <viewController id="oG6-5y-9PW" customClass="JHMasonryCase3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CCS-vk-lW5"/>
+                        <viewControllerLayoutGuide type="bottom" id="7TC-cb-mQk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lMm-lu-nx6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="子View的宽度始终是父View宽度的一半" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-Ti-0Wb" userLabel="instructionLabel">
+                                <rect key="frame" x="156" y="50" width="288" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="2FX-rT-9zW"/>
+                                    <constraint firstAttribute="width" constant="288" id="qhK-eL-xsj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MC-DY-ehC">
+                                <rect key="frame" x="156" y="168" width="288" height="69"/>
+                                <color key="backgroundColor" red="0.92156863209999995" green="0.92156863209999995" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="Vmx-QF-ZIH"/>
+                                    <constraint firstAttribute="width" constant="288" id="goV-Up-K0a"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jse-bi-aE1">
+                                <rect key="frame" x="154" y="267" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="fWX-3g-oav"/>
+                                    <constraint firstAttribute="height" constant="30" id="xk8-pf-qzt"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="modifyContainerViewWidth:" destination="oG6-5y-9PW" eventType="valueChanged" id="tYa-AW-huT"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-Ku-8pu">
+                                <rect key="frame" x="156" y="327" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ee7-VX-rHz"/>
+                                    <constraint firstAttribute="width" constant="288" id="qPU-io-Pte"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="oG6-5y-9PW" eventType="touchUpInside" id="0GE-0z-2va"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8MC-DY-ehC" firstAttribute="top" secondItem="MaK-Ti-0Wb" secondAttribute="bottom" constant="20" id="0bZ-f4-gxy"/>
+                            <constraint firstAttribute="centerX" secondItem="8MC-DY-ehC" secondAttribute="centerX" id="3zm-gh-bm3"/>
+                            <constraint firstItem="jse-bi-aE1" firstAttribute="top" secondItem="8MC-DY-ehC" secondAttribute="bottom" constant="30" id="7xn-Rs-I0O"/>
+                            <constraint firstAttribute="centerX" secondItem="Yfl-Ku-8pu" secondAttribute="centerX" id="Ux7-qc-C2O"/>
+                            <constraint firstAttribute="centerX" secondItem="MaK-Ti-0Wb" secondAttribute="centerX" id="lSg-Hd-fuY"/>
+                            <constraint firstItem="MaK-Ti-0Wb" firstAttribute="top" secondItem="CCS-vk-lW5" secondAttribute="bottom" constant="30" id="ls6-d5-Ib4"/>
+                            <constraint firstItem="Yfl-Ku-8pu" firstAttribute="top" secondItem="jse-bi-aE1" secondAttribute="bottom" constant="30" id="sUX-vv-GFH"/>
+                            <constraint firstAttribute="centerX" secondItem="jse-bi-aE1" secondAttribute="centerX" id="tbU-ih-zT1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="8MC-DY-ehC" id="Rz2-Wi-vcN"/>
+                        <outlet property="containerViewWidthConstraint" destination="goV-Up-K0a" id="dgb-Tf-2ms"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oo4-RK-bBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018" y="1135"/>
         </scene>
         <!--Masonry Case1-->
         <scene sceneID="xjk-k0-2mx">
