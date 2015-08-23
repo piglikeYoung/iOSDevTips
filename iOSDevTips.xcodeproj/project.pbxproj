@@ -39,6 +39,8 @@
 		7DD75B251B7DCE5200A7D74C /* JHCheckMobileOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75B241B7DCE5200A7D74C /* JHCheckMobileOperator.m */; };
 		7DD75B2C1B7DF65800A7D74C /* NSTimer+EZ_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75B2B1B7DF65800A7D74C /* NSTimer+EZ_Helper.m */; };
 		7DE0D5191B89782400CE4157 /* JHMasonryCase5.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0D5181B89782400CE4157 /* JHMasonryCase5.m */; };
+		7DE0D5251B8989A200CE4157 /* JHCase6ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0D5221B8989A200CE4157 /* JHCase6ItemView.m */; };
+		7DE0D5261B8989A200CE4157 /* JHMasonryCase6.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0D5241B8989A200CE4157 /* JHMasonryCase6.m */; };
 		7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551551B7AE4B70068CD81 /* HMNavigationController.m */; };
 		7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551591B7B14CE0068CD81 /* JHPopVc.m */; };
 		7DE618771B8846CB0034F6AA /* JHMasonryCaseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618761B8846CB0034F6AA /* JHMasonryCaseVc.m */; };
@@ -141,6 +143,10 @@
 		7DD75B2B1B7DF65800A7D74C /* NSTimer+EZ_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EZ_Helper.m"; sourceTree = "<group>"; };
 		7DE0D5171B89782400CE4157 /* JHMasonryCase5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase5.h; sourceTree = "<group>"; };
 		7DE0D5181B89782400CE4157 /* JHMasonryCase5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase5.m; sourceTree = "<group>"; };
+		7DE0D5211B8989A200CE4157 /* JHCase6ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCase6ItemView.h; sourceTree = "<group>"; };
+		7DE0D5221B8989A200CE4157 /* JHCase6ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCase6ItemView.m; sourceTree = "<group>"; };
+		7DE0D5231B8989A200CE4157 /* JHMasonryCase6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase6.h; sourceTree = "<group>"; };
+		7DE0D5241B8989A200CE4157 /* JHMasonryCase6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase6.m; sourceTree = "<group>"; };
 		7DE551541B7AE4B70068CD81 /* HMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
 		7DE551551B7AE4B70068CD81 /* HMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNavigationController.m; sourceTree = "<group>"; };
 		7DE551581B7B14CE0068CD81 /* JHPopVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPopVc.h; sourceTree = "<group>"; };
@@ -486,6 +492,17 @@
 			path = Case5;
 			sourceTree = "<group>";
 		};
+		7DE0D51A1B89891500CE4157 /* Case6 */ = {
+			isa = PBXGroup;
+			children = (
+				7DE0D5231B8989A200CE4157 /* JHMasonryCase6.h */,
+				7DE0D5241B8989A200CE4157 /* JHMasonryCase6.m */,
+				7DE0D5211B8989A200CE4157 /* JHCase6ItemView.h */,
+				7DE0D5221B8989A200CE4157 /* JHCase6ItemView.m */,
+			);
+			path = Case6;
+			sourceTree = "<group>";
+		};
 		7DE551571B7B14AF0068CD81 /* Pop */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +520,7 @@
 				7DE6188D1B8870D30034F6AA /* Case3 */,
 				7DE618901B8870D30034F6AA /* Case4 */,
 				7DE0D5161B8977F200CE4157 /* Case5 */,
+				7DE0D51A1B89891500CE4157 /* Case6 */,
 				7DE618751B8846CB0034F6AA /* JHMasonryCaseVc.h */,
 				7DE618761B8846CB0034F6AA /* JHMasonryCaseVc.m */,
 				7DE618781B8848A50034F6AA /* JHMasonryCaseVc.storyboard */,
@@ -781,12 +799,14 @@
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DE8FA4D1B7C9C1C00D9A305 /* JHTableHairGlassVc.m in Sources */,
 				7DE8FA501B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m in Sources */,
+				7DE0D5261B8989A200CE4157 /* JHMasonryCase6.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
 				7DEE49D11B832019001191D0 /* JHBgBlurViewVc.m in Sources */,
 				7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */,
 				7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */,
 				7DAF50021B78998400D314CD /* UIImage+Extension.m in Sources */,
+				7DE0D5251B8989A200CE4157 /* JHCase6ItemView.m in Sources */,
 				7DD75B1F1B7DB8EF00A7D74C /* NSString+TransformToPinyin.m in Sources */,
 				7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */,
 				7DE618961B8870D30034F6AA /* JHMasonryCase4.m in Sources */,
