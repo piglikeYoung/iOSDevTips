@@ -51,6 +51,9 @@
                                 <state key="normal" title="Case 4：UITableView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="H96-Cp-5B1" kind="show" id="SSn-23-Qow"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-Gm-qZy">
                                 <rect key="frame" x="192" y="371" width="216" height="30"/>
@@ -96,6 +99,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaz-M3-UXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="256"/>
+        </scene>
+        <!--Masonry Case4-->
+        <scene sceneID="zs7-B3-Lqc">
+            <objects>
+                <viewController id="H96-Cp-5B1" customClass="JHMasonryCase4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GBd-gi-f2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="uqp-DO-e4G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pgv-b9-chY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU5-Jq-390" userLabel="instructionLabel">
+                                <rect key="frame" x="156" y="40" width="288" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Io3-g1-Mdd"/>
+                                    <constraint firstAttribute="height" constant="76" id="iWh-tK-5zF"/>
+                                </constraints>
+                                <string key="text">变高的Cell+简单的高度缓存
+方法1: 调用systemLayoutSizeFittingSize: 获取高度。
+方法2: 使用iOS8的Self-Sizing特性</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gec-eK-KIM">
+                                <rect key="frame" x="0.0" y="124" width="600" height="430"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="H96-Cp-5B1" id="tKh-kS-nS5"/>
+                                    <outlet property="delegate" destination="H96-Cp-5B1" id="B94-AA-ZOK"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32r-W6-Ckd">
+                                <rect key="frame" x="156" y="562" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LuH-rg-Fep"/>
+                                    <constraint firstAttribute="width" constant="288" id="sGK-Nl-Spe"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="H96-Cp-5B1" eventType="touchUpInside" id="6M8-n3-3a8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gec-eK-KIM" firstAttribute="leading" secondItem="pgv-b9-chY" secondAttribute="leading" id="5wT-Gd-0eX"/>
+                            <constraint firstItem="gec-eK-KIM" firstAttribute="top" secondItem="PU5-Jq-390" secondAttribute="bottom" constant="8" id="Bcc-lT-oyC"/>
+                            <constraint firstItem="uqp-DO-e4G" firstAttribute="top" secondItem="32r-W6-Ckd" secondAttribute="bottom" constant="8" id="Nzg-TJ-4NU"/>
+                            <constraint firstAttribute="centerX" secondItem="32r-W6-Ckd" secondAttribute="centerX" id="cAz-jn-cNE"/>
+                            <constraint firstItem="32r-W6-Ckd" firstAttribute="top" secondItem="gec-eK-KIM" secondAttribute="bottom" constant="8" id="fkA-jV-WIl"/>
+                            <constraint firstAttribute="trailing" secondItem="gec-eK-KIM" secondAttribute="trailing" id="gKx-2v-gbc"/>
+                            <constraint firstAttribute="centerX" secondItem="PU5-Jq-390" secondAttribute="centerX" id="lfG-MW-pC2"/>
+                            <constraint firstItem="PU5-Jq-390" firstAttribute="top" secondItem="GBd-gi-f2a" secondAttribute="bottom" constant="20" id="rT0-FG-CeL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gec-eK-KIM" id="wOO-Rc-tqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhA-Wh-Pud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="1010"/>
         </scene>
         <!--Masonry Case2-->
         <scene sceneID="i2w-Ga-bBT">

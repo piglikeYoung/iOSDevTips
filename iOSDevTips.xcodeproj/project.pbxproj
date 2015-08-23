@@ -42,9 +42,12 @@
 		7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE551591B7B14CE0068CD81 /* JHPopVc.m */; };
 		7DE618771B8846CB0034F6AA /* JHMasonryCaseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618761B8846CB0034F6AA /* JHMasonryCaseVc.m */; };
 		7DE618791B8848A50034F6AA /* JHMasonryCaseVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE618781B8848A50034F6AA /* JHMasonryCaseVc.storyboard */; };
-		7DE6187C1B884E8C0034F6AA /* JHMasonryCase1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6187B1B884E8C0034F6AA /* JHMasonryCase1.m */; };
-		7DE6187F1B885B610034F6AA /* JHMasonryCase2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6187E1B885B610034F6AA /* JHMasonryCase2.m */; };
-		7DE618821B88666D0034F6AA /* JHMasonryCase3.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618811B88666D0034F6AA /* JHMasonryCase3.m */; };
+		7DE618931B8870D30034F6AA /* JHMasonryCase1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618891B8870D30034F6AA /* JHMasonryCase1.m */; };
+		7DE618941B8870D30034F6AA /* JHMasonryCase2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6188C1B8870D30034F6AA /* JHMasonryCase2.m */; };
+		7DE618951B8870D30034F6AA /* JHMasonryCase3.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6188F1B8870D30034F6AA /* JHMasonryCase3.m */; };
+		7DE618961B8870D30034F6AA /* JHMasonryCase4.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618921B8870D30034F6AA /* JHMasonryCase4.m */; };
+		7DE618991B8870F80034F6AA /* JHCase4DataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618981B8870F80034F6AA /* JHCase4DataEntity.m */; };
+		7DE6189C1B8871320034F6AA /* JHCase4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6189B1B8871320034F6AA /* JHCase4Cell.m */; };
 		7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */; };
 		7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */; };
 		7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */; };
@@ -142,12 +145,18 @@
 		7DE618751B8846CB0034F6AA /* JHMasonryCaseVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCaseVc.h; sourceTree = "<group>"; };
 		7DE618761B8846CB0034F6AA /* JHMasonryCaseVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCaseVc.m; sourceTree = "<group>"; };
 		7DE618781B8848A50034F6AA /* JHMasonryCaseVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JHMasonryCaseVc.storyboard; sourceTree = "<group>"; };
-		7DE6187A1B884E8C0034F6AA /* JHMasonryCase1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase1.h; sourceTree = "<group>"; };
-		7DE6187B1B884E8C0034F6AA /* JHMasonryCase1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase1.m; sourceTree = "<group>"; };
-		7DE6187D1B885B610034F6AA /* JHMasonryCase2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase2.h; sourceTree = "<group>"; };
-		7DE6187E1B885B610034F6AA /* JHMasonryCase2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase2.m; sourceTree = "<group>"; };
-		7DE618801B88666D0034F6AA /* JHMasonryCase3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase3.h; sourceTree = "<group>"; };
-		7DE618811B88666D0034F6AA /* JHMasonryCase3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase3.m; sourceTree = "<group>"; };
+		7DE618881B8870D30034F6AA /* JHMasonryCase1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase1.h; sourceTree = "<group>"; };
+		7DE618891B8870D30034F6AA /* JHMasonryCase1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase1.m; sourceTree = "<group>"; };
+		7DE6188B1B8870D30034F6AA /* JHMasonryCase2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase2.h; sourceTree = "<group>"; };
+		7DE6188C1B8870D30034F6AA /* JHMasonryCase2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase2.m; sourceTree = "<group>"; };
+		7DE6188E1B8870D30034F6AA /* JHMasonryCase3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase3.h; sourceTree = "<group>"; };
+		7DE6188F1B8870D30034F6AA /* JHMasonryCase3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase3.m; sourceTree = "<group>"; };
+		7DE618911B8870D30034F6AA /* JHMasonryCase4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase4.h; sourceTree = "<group>"; };
+		7DE618921B8870D30034F6AA /* JHMasonryCase4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase4.m; sourceTree = "<group>"; };
+		7DE618971B8870F80034F6AA /* JHCase4DataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCase4DataEntity.h; sourceTree = "<group>"; };
+		7DE618981B8870F80034F6AA /* JHCase4DataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCase4DataEntity.m; sourceTree = "<group>"; };
+		7DE6189A1B8871320034F6AA /* JHCase4Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCase4Cell.h; sourceTree = "<group>"; };
+		7DE6189B1B8871320034F6AA /* JHCase4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCase4Cell.m; sourceTree = "<group>"; };
 		7DE8FA2D1B7C318900D9A305 /* JHTableResponseVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableResponseVc.h; sourceTree = "<group>"; };
 		7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableResponseVc.m; sourceTree = "<group>"; };
 		7DE8FA301B7C36B500D9A305 /* JHTableCustomBtnVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableCustomBtnVc.h; sourceTree = "<group>"; };
@@ -477,17 +486,55 @@
 		7DE618741B8845670034F6AA /* MasonryCase */ = {
 			isa = PBXGroup;
 			children = (
+				7DE618871B8870D30034F6AA /* Case1 */,
+				7DE6188A1B8870D30034F6AA /* Case2 */,
+				7DE6188D1B8870D30034F6AA /* Case3 */,
+				7DE618901B8870D30034F6AA /* Case4 */,
 				7DE618751B8846CB0034F6AA /* JHMasonryCaseVc.h */,
 				7DE618761B8846CB0034F6AA /* JHMasonryCaseVc.m */,
-				7DE6187A1B884E8C0034F6AA /* JHMasonryCase1.h */,
-				7DE6187B1B884E8C0034F6AA /* JHMasonryCase1.m */,
-				7DE6187D1B885B610034F6AA /* JHMasonryCase2.h */,
-				7DE6187E1B885B610034F6AA /* JHMasonryCase2.m */,
-				7DE618801B88666D0034F6AA /* JHMasonryCase3.h */,
-				7DE618811B88666D0034F6AA /* JHMasonryCase3.m */,
 				7DE618781B8848A50034F6AA /* JHMasonryCaseVc.storyboard */,
 			);
 			path = MasonryCase;
+			sourceTree = "<group>";
+		};
+		7DE618871B8870D30034F6AA /* Case1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DE618881B8870D30034F6AA /* JHMasonryCase1.h */,
+				7DE618891B8870D30034F6AA /* JHMasonryCase1.m */,
+			);
+			path = Case1;
+			sourceTree = "<group>";
+		};
+		7DE6188A1B8870D30034F6AA /* Case2 */ = {
+			isa = PBXGroup;
+			children = (
+				7DE6188B1B8870D30034F6AA /* JHMasonryCase2.h */,
+				7DE6188C1B8870D30034F6AA /* JHMasonryCase2.m */,
+			);
+			path = Case2;
+			sourceTree = "<group>";
+		};
+		7DE6188D1B8870D30034F6AA /* Case3 */ = {
+			isa = PBXGroup;
+			children = (
+				7DE6188E1B8870D30034F6AA /* JHMasonryCase3.h */,
+				7DE6188F1B8870D30034F6AA /* JHMasonryCase3.m */,
+			);
+			path = Case3;
+			sourceTree = "<group>";
+		};
+		7DE618901B8870D30034F6AA /* Case4 */ = {
+			isa = PBXGroup;
+			children = (
+				7DE618911B8870D30034F6AA /* JHMasonryCase4.h */,
+				7DE618921B8870D30034F6AA /* JHMasonryCase4.m */,
+				7DE618971B8870F80034F6AA /* JHCase4DataEntity.h */,
+				7DE618981B8870F80034F6AA /* JHCase4DataEntity.m */,
+				7DE6189A1B8871320034F6AA /* JHCase4Cell.h */,
+				7DE6189B1B8871320034F6AA /* JHCase4Cell.m */,
+			);
+			path = Case4;
 			sourceTree = "<group>";
 		};
 		7DE8FA2C1B7C30F600D9A305 /* TableView */ = {
@@ -709,11 +756,12 @@
 				7DE8FA4A1B7C8B3800D9A305 /* JHTableShowMenuVc.m in Sources */,
 				7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */,
 				7DD75B191B7D7C6F00A7D74C /* JHTableMovingCellVc.m in Sources */,
-				7DE6187F1B885B610034F6AA /* JHMasonryCase2.m in Sources */,
+				7DE618941B8870D30034F6AA /* JHMasonryCase2.m in Sources */,
 				7DE618771B8846CB0034F6AA /* JHMasonryCaseVc.m in Sources */,
 				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
+				7DE618991B8870F80034F6AA /* JHCase4DataEntity.m in Sources */,
 				7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */,
-				7DE6187C1B884E8C0034F6AA /* JHMasonryCase1.m in Sources */,
+				7DE618931B8870D30034F6AA /* JHMasonryCase1.m in Sources */,
 				7DD75B251B7DCE5200A7D74C /* JHCheckMobileOperator.m in Sources */,
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
 				7DE8FA3B1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m in Sources */,
@@ -728,19 +776,21 @@
 				7DAF50021B78998400D314CD /* UIImage+Extension.m in Sources */,
 				7DD75B1F1B7DB8EF00A7D74C /* NSString+TransformToPinyin.m in Sources */,
 				7DAF4FB21B784E2A00D314CD /* JHCommonViewController.m in Sources */,
+				7DE618961B8870D30034F6AA /* JHMasonryCase4.m in Sources */,
 				7DAF4F961B783FDE00D314CD /* JHNavigationController.m in Sources */,
 				7DAF50031B78998400D314CD /* UIView+Extension.m in Sources */,
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */,
 				7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */,
 				7DE8FA461B7C76C600D9A305 /* SwipeableCell.m in Sources */,
-				7DE618821B88666D0034F6AA /* JHMasonryCase3.m in Sources */,
+				7DE618951B8870D30034F6AA /* JHMasonryCase3.m in Sources */,
 				7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,
 				7DE8FA381B7C47DD00D9A305 /* JHTableEditVc.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
 				7DD75B2C1B7DF65800A7D74C /* NSTimer+EZ_Helper.m in Sources */,
+				7DE6189C1B8871320034F6AA /* JHCase4Cell.m in Sources */,
 				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
 				7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */,
 				7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */,
@@ -883,7 +933,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSDevTips/JHPrefixHeader.pch";
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -902,7 +952,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSDevTips/JHPrefixHeader.pch";
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
