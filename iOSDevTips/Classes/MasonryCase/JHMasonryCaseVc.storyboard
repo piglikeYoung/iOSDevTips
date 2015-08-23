@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ofE-QS-jfu">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -60,6 +61,9 @@
                                 <state key="normal" title="Case 5：top(bottom)GuideView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="c4b-HW-8Kf" kind="show" id="3Gy-pH-ufD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLJ-t1-0Z1">
                                 <rect key="frame" x="217.5" y="431" width="165" height="30"/>
@@ -99,6 +103,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaz-M3-UXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="256"/>
+        </scene>
+        <!--Masonry Case5-->
+        <scene sceneID="kfZ-Gk-f1U">
+            <objects>
+                <viewController id="c4b-HW-8Kf" customClass="JHMasonryCase5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jTp-NS-33s"/>
+                        <viewControllerLayoutGuide type="bottom" id="W5b-B4-rbe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wSN-ko-M2D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-E8-r1P">
+                                <rect key="frame" x="156" y="260" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="bfc-OM-jOy"/>
+                                    <constraint firstAttribute="height" constant="30" id="xMJ-DQ-p7P"/>
+                                </constraints>
+                                <state key="normal" title="Show or hide NavigationBar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showOrHideTopBar:" destination="c4b-HW-8Kf" eventType="touchUpInside" id="7PM-Tn-3X2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prp-27-YxH">
+                                <rect key="frame" x="156" y="380" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ln2-jd-TIc"/>
+                                    <constraint firstAttribute="width" constant="288" id="lqF-JZ-YnO"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="c4b-HW-8Kf" eventType="touchUpInside" id="Ry3-9j-PEr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRJ-AA-Y1j">
+                                <rect key="frame" x="156" y="320" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="i6o-i8-Jkk"/>
+                                    <constraint firstAttribute="height" constant="30" id="igp-yX-CfY"/>
+                                </constraints>
+                                <state key="normal" title="Show or hide ToolBar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showOrHideBottomBar:" destination="c4b-HW-8Kf" eventType="touchUpInside" id="uyb-bm-zJP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5D-Rc-cI8">
+                                <rect key="frame" x="156" y="50" width="288" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="PJb-yw-tZX"/>
+                                    <constraint firstAttribute="height" constant="180" id="pNM-fI-ReX"/>
+                                </constraints>
+                                <string key="text">使用top(bottom)LayoutGuide确定当前ViewController的最佳显示范围。
+
+方法1: 直接使用length属性，避免强制转换成UIView所带来的风险。
+
+方法2: 使用新的mas_topLayoutGuide和mas_bottomLayoutGuide</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Xaf-E8-r1P" secondAttribute="centerX" id="43T-na-gcX"/>
+                            <constraint firstItem="Prp-27-YxH" firstAttribute="top" secondItem="lRJ-AA-Y1j" secondAttribute="bottom" constant="30" id="Abj-5b-6dq"/>
+                            <constraint firstItem="Z5D-Rc-cI8" firstAttribute="top" secondItem="jTp-NS-33s" secondAttribute="bottom" constant="30" id="B5Z-JY-Q54"/>
+                            <constraint firstAttribute="centerX" secondItem="Z5D-Rc-cI8" secondAttribute="centerX" id="Izr-03-igt"/>
+                            <constraint firstItem="Xaf-E8-r1P" firstAttribute="top" secondItem="Z5D-Rc-cI8" secondAttribute="bottom" constant="30" id="L2F-po-Csd"/>
+                            <constraint firstAttribute="centerX" secondItem="lRJ-AA-Y1j" secondAttribute="centerX" id="Wfp-me-cbl"/>
+                            <constraint firstAttribute="centerX" secondItem="Prp-27-YxH" secondAttribute="centerX" id="aDw-94-NQ6"/>
+                            <constraint firstItem="lRJ-AA-Y1j" firstAttribute="top" secondItem="Xaf-E8-r1P" secondAttribute="bottom" constant="30" id="lJp-R9-UcQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xoZ-Dh-93H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJo-9b-U6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="1015"/>
         </scene>
         <!--Masonry Case4-->
         <scene sceneID="zs7-B3-Lqc">
@@ -165,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhA-Wh-Pud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="1010"/>
+            <point key="canvasLocation" x="1128" y="1010"/>
         </scene>
         <!--Masonry Case2-->
         <scene sceneID="i2w-Ga-bBT">
@@ -251,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pku-w5-2hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="463"/>
+            <point key="canvasLocation" x="1822" y="463"/>
         </scene>
         <!--Masonry Case3-->
         <scene sceneID="Xnn-CN-Ku6">
@@ -326,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo4-RK-bBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018" y="1135"/>
+            <point key="canvasLocation" x="1830" y="1135"/>
         </scene>
         <!--Masonry Case1-->
         <scene sceneID="xjk-k0-2mx">
