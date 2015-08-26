@@ -27,6 +27,7 @@
 #import "JHCheckMobileOperator.h"
 #import "JHBgBlurViewVc.h"
 #import "JHMasonryCaseVc.h"
+#import "JHAnimatedImagesVc.h"
 
 @interface JHMainViewController ()
 
@@ -34,8 +35,7 @@
 
 @implementation JHMainViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title = @"主页";
@@ -45,6 +45,11 @@
     JHLog(@"%@", [JHCheckMobileOperator checkMobileOperator]);
 }
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
 
 /**
  *  初始化模型数据
@@ -59,6 +64,7 @@
     [self setupGroup5];
     [self setupGroup6];
     [self setupGroup7];
+    [self setupGroup8];
 }
 
 - (void)setupGroup0
@@ -199,6 +205,21 @@
     masonryCase.initByStoryBoard = YES;// 通过storyboard创建控制器
     
     group.items = @[masonryCase];
+}
+
+- (void)setupGroup8
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"一些有趣的登录界面效果";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *animatedImages = [JHCommonArrowItem itemWithTitle:@"动态图登录界面"];
+    animatedImages.destVcClass = [JHAnimatedImagesVc class];
+
+    
+    group.items = @[animatedImages];
 }
 
 

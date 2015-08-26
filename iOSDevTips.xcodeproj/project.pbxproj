@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		127F77EBC0194418E917214A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4435759273F24E4801974761 /* libPods.a */; };
+		7D9C9BE41B8D618D00FFD46E /* JHAnimatedImagesVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C9BE31B8D618D00FFD46E /* JHAnimatedImagesVc.m */; };
+		7D9C9BE81B8D629500FFD46E /* JHAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C9BE71B8D629500FFD46E /* JHAnimatedImagesView.m */; };
 		7DAF4F5D1B78393A00D314CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F5C1B78393A00D314CD /* main.m */; };
 		7DAF4F661B78393A00D314CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F641B78393A00D314CD /* Main.storyboard */; };
 		7DAF4F681B78393A00D314CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F671B78393A00D314CD /* Images.xcassets */; };
@@ -81,6 +83,10 @@
 /* Begin PBXFileReference section */
 		4435759273F24E4801974761 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74983A02184CA3316314623E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7D9C9BE21B8D618D00FFD46E /* JHAnimatedImagesVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImagesVc.h; sourceTree = "<group>"; };
+		7D9C9BE31B8D618D00FFD46E /* JHAnimatedImagesVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImagesVc.m; sourceTree = "<group>"; };
+		7D9C9BE61B8D629500FFD46E /* JHAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImagesView.h; sourceTree = "<group>"; };
+		7D9C9BE71B8D629500FFD46E /* JHAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImagesView.m; sourceTree = "<group>"; };
 		7DAF4F571B78393A00D314CD /* iOSDevTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDevTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAF4F5B1B78393A00D314CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAF4F5C1B78393A00D314CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -226,6 +232,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7D9C9BE11B8D614400FFD46E /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				7D9C9BE51B8D626400FFD46E /* Views */,
+				7D9C9BE21B8D618D00FFD46E /* JHAnimatedImagesVc.h */,
+				7D9C9BE31B8D618D00FFD46E /* JHAnimatedImagesVc.m */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		7D9C9BE51B8D626400FFD46E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D9C9BE61B8D629500FFD46E /* JHAnimatedImagesView.h */,
+				7D9C9BE71B8D629500FFD46E /* JHAnimatedImagesView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7DAF4F4E1B78393A00D314CD = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +313,7 @@
 		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7D9C9BE11B8D614400FFD46E /* LoginView */,
 				7DE618741B8845670034F6AA /* MasonryCase */,
 				7DEE49CE1B831FCC001191D0 /* BackgroundBlurView */,
 				7DE8FA2C1B7C30F600D9A305 /* TableView */,
@@ -820,6 +846,7 @@
 				7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,
+				7D9C9BE81B8D629500FFD46E /* JHAnimatedImagesView.m in Sources */,
 				7DE8FA381B7C47DD00D9A305 /* JHTableEditVc.m in Sources */,
 				7DAF4F5D1B78393A00D314CD /* main.m in Sources */,
 				7DD75B2C1B7DF65800A7D74C /* NSTimer+EZ_Helper.m in Sources */,
@@ -835,6 +862,7 @@
 				7DAF4FBF1B7850F700D314CD /* JHCommonCell.m in Sources */,
 				7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */,
 				7DAF4FFF1B78998400D314CD /* NSString+Extension.m in Sources */,
+				7D9C9BE41B8D618D00FFD46E /* JHAnimatedImagesVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
