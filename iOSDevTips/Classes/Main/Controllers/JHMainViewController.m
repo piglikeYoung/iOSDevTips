@@ -28,6 +28,7 @@
 #import "JHBgBlurViewVc.h"
 #import "JHMasonryCaseVc.h"
 #import "JHAnimatedImagesVc.h"
+#import "JHMovLoginVc.h"
 
 @interface JHMainViewController ()
 
@@ -217,9 +218,12 @@
     // 2.设置组的所有行数据
     JHCommonArrowItem *animatedImages = [JHCommonArrowItem itemWithTitle:@"动态图登录界面"];
     animatedImages.destVcClass = [JHAnimatedImagesVc class];
+    
+    JHCommonArrowItem *mov = [JHCommonArrowItem itemWithTitle:@"短片登录界面"];
+    mov.destVcClass = [JHMovLoginVc class];
 
     
-    group.items = @[animatedImages];
+    group.items = @[animatedImages, mov];
 }
 
 

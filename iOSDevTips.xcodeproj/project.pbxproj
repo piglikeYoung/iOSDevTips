@@ -70,6 +70,7 @@
 		7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBC01B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m */; };
 		7DEE49D11B832019001191D0 /* JHBgBlurViewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE49D01B832019001191D0 /* JHBgBlurViewVc.m */; };
 		7DF960E31B8DA17400E3E9CA /* start.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7DF960E21B8DA17400E3E9CA /* start.mov */; };
+		7DF960E91B8DAA5B00E3E9CA /* AppMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF960E81B8DAA5B00E3E9CA /* AppMacro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +207,8 @@
 		7DEE49CF1B832019001191D0 /* JHBgBlurViewVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBgBlurViewVc.h; sourceTree = "<group>"; };
 		7DEE49D01B832019001191D0 /* JHBgBlurViewVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBgBlurViewVc.m; sourceTree = "<group>"; };
 		7DF960E21B8DA17400E3E9CA /* start.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = start.mov; sourceTree = "<group>"; };
+		7DF960E71B8DAA5B00E3E9CA /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		7DF960E81B8DAA5B00E3E9CA /* AppMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMacro.m; sourceTree = "<group>"; };
 		BBE044C142EA45CAFC03FE6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -346,6 +349,7 @@
 		7DAF4F8D1B783FDE00D314CD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7DF960E61B8DAA4000E3E9CA /* Macro */,
 				7DD75B221B7DCDEC00A7D74C /* Utils */,
 				7DAF4FC31B788FED00D314CD /* Lib */,
 				7DAF4FB31B784F4500D314CD /* Common */,
@@ -677,6 +681,15 @@
 			path = BackgroundBlurView;
 			sourceTree = "<group>";
 		};
+		7DF960E61B8DAA4000E3E9CA /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				7DF960E71B8DAA5B00E3E9CA /* AppMacro.h */,
+				7DF960E81B8DAA5B00E3E9CA /* AppMacro.m */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		A051F8B6ADA79DD8426649C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -826,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF960E91B8DAA5B00E3E9CA /* AppMacro.m in Sources */,
 				7DAF50001B78998400D314CD /* NSString+File.m in Sources */,
 				7DE8FA4A1B7C8B3800D9A305 /* JHTableShowMenuVc.m in Sources */,
 				7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */,
