@@ -10,7 +10,7 @@
 #import "NSTimer+EZ_Helper.h"
 
 // 动态图的展示时间
-static const NSTimeInterval kAnimatedImagesViewDefaultTimePerImage = 5.0f;
+static const NSTimeInterval kAnimatedImagesViewDefaultTimePerImage = 20.0f;
 
 // 没有图片时的索引
 static const NSInteger kNoImageDisplayingIndex  = -1;
