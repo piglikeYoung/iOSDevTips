@@ -52,7 +52,8 @@
 }
 
 - (UIImage*)animatedImagesView:(JHAnimatedImagesView*)animatedImagesView imageAtIndex:(NSUInteger)index {
-    return [UIImage imageNamed:@"login_background"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"login_background.png" ofType:nil];
+    return [UIImage imageWithContentsOfFile:path];
 }
 
 

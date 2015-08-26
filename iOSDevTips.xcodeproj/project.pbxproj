@@ -10,6 +10,7 @@
 		127F77EBC0194418E917214A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4435759273F24E4801974761 /* libPods.a */; };
 		7D9C9BE41B8D618D00FFD46E /* JHAnimatedImagesVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C9BE31B8D618D00FFD46E /* JHAnimatedImagesVc.m */; };
 		7D9C9BE81B8D629500FFD46E /* JHAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C9BE71B8D629500FFD46E /* JHAnimatedImagesView.m */; };
+		7D9C9BF11B8D9D5000FFD46E /* JHMovLoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C9BF01B8D9D5000FFD46E /* JHMovLoginVc.m */; };
 		7DAF4F5D1B78393A00D314CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF4F5C1B78393A00D314CD /* main.m */; };
 		7DAF4F661B78393A00D314CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F641B78393A00D314CD /* Main.storyboard */; };
 		7DAF4F681B78393A00D314CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAF4F671B78393A00D314CD /* Images.xcassets */; };
@@ -68,6 +69,7 @@
 		7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBBD1B79FF6500FA7DE7 /* JHTextView.m */; };
 		7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9CBC01B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m */; };
 		7DEE49D11B832019001191D0 /* JHBgBlurViewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE49D01B832019001191D0 /* JHBgBlurViewVc.m */; };
+		7DF960E31B8DA17400E3E9CA /* start.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7DF960E21B8DA17400E3E9CA /* start.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		7D9C9BE31B8D618D00FFD46E /* JHAnimatedImagesVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImagesVc.m; sourceTree = "<group>"; };
 		7D9C9BE61B8D629500FFD46E /* JHAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImagesView.h; sourceTree = "<group>"; };
 		7D9C9BE71B8D629500FFD46E /* JHAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImagesView.m; sourceTree = "<group>"; };
+		7D9C9BEF1B8D9D5000FFD46E /* JHMovLoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMovLoginVc.h; sourceTree = "<group>"; };
+		7D9C9BF01B8D9D5000FFD46E /* JHMovLoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMovLoginVc.m; sourceTree = "<group>"; };
 		7DAF4F571B78393A00D314CD /* iOSDevTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDevTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAF4F5B1B78393A00D314CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAF4F5C1B78393A00D314CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 		7DE9CBC01B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPlaceholderTextViewVc.m; sourceTree = "<group>"; };
 		7DEE49CF1B832019001191D0 /* JHBgBlurViewVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBgBlurViewVc.h; sourceTree = "<group>"; };
 		7DEE49D01B832019001191D0 /* JHBgBlurViewVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBgBlurViewVc.m; sourceTree = "<group>"; };
+		7DF960E21B8DA17400E3E9CA /* start.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = start.mov; sourceTree = "<group>"; };
 		BBE044C142EA45CAFC03FE6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +243,8 @@
 				7D9C9BE51B8D626400FFD46E /* Views */,
 				7D9C9BE21B8D618D00FFD46E /* JHAnimatedImagesVc.h */,
 				7D9C9BE31B8D618D00FFD46E /* JHAnimatedImagesVc.m */,
+				7D9C9BEF1B8D9D5000FFD46E /* JHMovLoginVc.h */,
+				7D9C9BF01B8D9D5000FFD46E /* JHMovLoginVc.m */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -249,6 +256,14 @@
 				7D9C9BE71B8D629500FFD46E /* JHAnimatedImagesView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7D9C9BEC1B8D9CFC00FFD46E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7DF960E21B8DA17400E3E9CA /* start.mov */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		7DAF4F4E1B78393A00D314CD = {
@@ -286,6 +301,7 @@
 		7DAF4F5A1B78393A00D314CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7D9C9BEC1B8D9CFC00FFD46E /* Resource */,
 				7DAF4F5B1B78393A00D314CD /* Info.plist */,
 				7DAF4F5C1B78393A00D314CD /* main.m */,
 				7DAF4FAC1B7841B700D314CD /* JHPrefixHeader.pch */,
@@ -755,6 +771,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAF4F661B78393A00D314CD /* Main.storyboard in Resources */,
+				7DF960E31B8DA17400E3E9CA /* start.mov in Resources */,
 				7DAF4F6B1B78393A00D314CD /* LaunchScreen.xib in Resources */,
 				7DE8FA471B7C76C600D9A305 /* SwipeableCell.xib in Resources */,
 				7DE618791B8848A50034F6AA /* JHMasonryCaseVc.storyboard in Resources */,
@@ -862,6 +879,7 @@
 				7DAF4FBF1B7850F700D314CD /* JHCommonCell.m in Sources */,
 				7DE9CBBA1B799A5C00FA7DE7 /* JHAsyncSocketVc.m in Sources */,
 				7DAF4FFF1B78998400D314CD /* NSString+Extension.m in Sources */,
+				7D9C9BF11B8D9D5000FFD46E /* JHMovLoginVc.m in Sources */,
 				7D9C9BE41B8D618D00FFD46E /* JHAnimatedImagesVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
