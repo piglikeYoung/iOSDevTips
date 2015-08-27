@@ -9,6 +9,10 @@
 #import "ThirdPartService.h"
 #import "MobClick.h"
 
+@interface ThirdPartService()<UIAlertViewDelegate>
+
+@end
+
 
 @implementation ThirdPartService
 
@@ -25,6 +29,20 @@
     
     // 开启日志
     [MobClick setLogEnabled:YES];
+    
+    // 自动更新检测
+//    [MobClick checkUpdate:@"New version" cancelButtonTitle:@"Skip" otherButtonTitles:@"Goto Store"];
+    
+    // 自定义方法
+    [MobClick checkUpdateWithDelegate:self selector:@selector(appUpdate:)];
+}
+
++ (void)appUpdate:(NSDictionary *)appInfo {
+//    JHLog(@"appInfo---%@", appInfo);
+    
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"您有新的版本更新，请到AppStore更新" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", @"别再提示老子", nil];
+//    
+//    [alertView show];
 }
 
 @end
