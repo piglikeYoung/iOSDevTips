@@ -112,6 +112,8 @@
     if (item.operation) {
         item.operation();
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
