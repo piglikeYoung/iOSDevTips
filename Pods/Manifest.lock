@@ -1,6 +1,7 @@
 PODS:
   - CocoaAsyncSocket (7.4.1)
   - FXBlurView (1.6.3)
+  - iRate (1.11.4)
   - Masonry (0.6.2)
   - pop (1.0.7)
   - SDWebImage (3.7.3):
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - CocoaAsyncSocket
   - FXBlurView
+  - iRate
   - Masonry
   - pop (~> 1.0)
   - SDWebImage
@@ -21,6 +23,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 7cbf214b27f8e7f7574db6a3fd96352ffaed433d
   FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
+  iRate: 599ed07c854e0695f3c605d1b2a64c67d912acb7
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84

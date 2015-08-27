@@ -232,13 +232,12 @@
 {
     // 1.创建组
     JHCommonGroup *group = [JHCommonGroup group];
-    group.header = @"友盟社会化分享";
+    group.header = @"一些有用的集成";
     [self.groups addObject:group];
     
     // 2.设置组的所有行数据
     JHCommonArrowItem *umengSocial = [JHCommonArrowItem itemWithTitle:@"友盟社会化分享"];
     umengSocial.destVcClass = [JHUmengSocialVc class];
-    
     
     group.items = @[umengSocial];
 }

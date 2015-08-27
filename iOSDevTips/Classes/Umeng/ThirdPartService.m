@@ -10,7 +10,6 @@
 #import "MobClick.h"
 #import "UMSocial.h"
 
-
 static NSString *const kUmengAppKey = @"55de7470e0f55a8b63004dda";
 
 @interface ThirdPartService()<UIAlertViewDelegate>
@@ -25,6 +24,13 @@ static NSString *const kUmengAppKey = @"55de7470e0f55a8b63004dda";
  */
 + (void)load {
 
+    [ThirdPartService setupUmengConfig];
+    
+}
+
+
+#pragma mark - 友盟集成
++ (void)setupUmengConfig {
     // 设置友盟统计分析appkey
     [MobClick startWithAppkey:kUmengAppKey];
     // 设置友盟社会化分享appkey
@@ -37,11 +43,12 @@ static NSString *const kUmengAppKey = @"55de7470e0f55a8b63004dda";
     [MobClick setLogEnabled:YES];
     
     // 自动更新检测
-//    [MobClick checkUpdate:@"New version" cancelButtonTitle:@"Skip" otherButtonTitles:@"Goto Store"];
+    //    [MobClick checkUpdate:@"New version" cancelButtonTitle:@"Skip" otherButtonTitles:@"Goto Store"];
     
     // 自定义方法
     [MobClick checkUpdateWithDelegate:self selector:@selector(appUpdate:)];
 }
+
 
 + (void)appUpdate:(NSDictionary *)appInfo {
 //    JHLog(@"appInfo---%@", appInfo);
