@@ -44,6 +44,7 @@
 		7DE090A61B8EAE7A002B0F3F /* ThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE090A51B8EAE7A002B0F3F /* ThirdPartService.m */; };
 		7DE090AD1B8EB29D002B0F3F /* UIViewController+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE090AC1B8EB29D002B0F3F /* UIViewController+AOP.m */; };
 		7DE090AF1B8EB7C8002B0F3F /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE090AE1B8EB7C8002B0F3F /* login_background.png */; };
+		7DE090B21B8EDA28002B0F3F /* JHUmengSocialVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE090B11B8EDA28002B0F3F /* JHUmengSocialVc.m */; };
 		7DE0D5191B89782400CE4157 /* JHMasonryCase5.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0D5181B89782400CE4157 /* JHMasonryCase5.m */; };
 		7DE0D5251B8989A200CE4157 /* JHCase6ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0D5221B8989A200CE4157 /* JHCase6ItemView.m */; };
 		7DE0D5261B8989A200CE4157 /* JHMasonryCase6.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0D5241B8989A200CE4157 /* JHMasonryCase6.m */; };
@@ -160,6 +161,8 @@
 		7DE090AB1B8EB29D002B0F3F /* UIViewController+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AOP.h"; sourceTree = "<group>"; };
 		7DE090AC1B8EB29D002B0F3F /* UIViewController+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AOP.m"; sourceTree = "<group>"; };
 		7DE090AE1B8EB7C8002B0F3F /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background.png; sourceTree = "<group>"; };
+		7DE090B01B8EDA28002B0F3F /* JHUmengSocialVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUmengSocialVc.h; sourceTree = "<group>"; };
+		7DE090B11B8EDA28002B0F3F /* JHUmengSocialVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUmengSocialVc.m; sourceTree = "<group>"; };
 		7DE0D5171B89782400CE4157 /* JHMasonryCase5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMasonryCase5.h; sourceTree = "<group>"; };
 		7DE0D5181B89782400CE4157 /* JHMasonryCase5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMasonryCase5.m; sourceTree = "<group>"; };
 		7DE0D5211B8989A200CE4157 /* JHCase6ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCase6ItemView.h; sourceTree = "<group>"; };
@@ -545,6 +548,8 @@
 			children = (
 				7DE090A41B8EAE7A002B0F3F /* ThirdPartService.h */,
 				7DE090A51B8EAE7A002B0F3F /* ThirdPartService.m */,
+				7DE090B01B8EDA28002B0F3F /* JHUmengSocialVc.h */,
+				7DE090B11B8EDA28002B0F3F /* JHUmengSocialVc.m */,
 			);
 			path = Umeng;
 			sourceTree = "<group>";
@@ -879,6 +884,7 @@
 				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
 				7DE618991B8870F80034F6AA /* JHCase4DataEntity.m in Sources */,
 				7DAF4FFD1B78998400D314CD /* NSDate+Extension.m in Sources */,
+				7DE090B21B8EDA28002B0F3F /* JHUmengSocialVc.m in Sources */,
 				7DE618931B8870D30034F6AA /* JHMasonryCase1.m in Sources */,
 				7DD75B251B7DCE5200A7D74C /* JHCheckMobileOperator.m in Sources */,
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,

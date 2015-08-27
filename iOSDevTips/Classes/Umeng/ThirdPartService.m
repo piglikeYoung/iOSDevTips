@@ -8,6 +8,10 @@
 
 #import "ThirdPartService.h"
 #import "MobClick.h"
+#import "UMSocial.h"
+
+
+static NSString *const kUmengAppKey = @"55de7470e0f55a8b63004dda";
 
 @interface ThirdPartService()<UIAlertViewDelegate>
 
@@ -21,8 +25,10 @@
  */
 + (void)load {
 
-    // 设置友盟appkey
-    [MobClick startWithAppkey:@"55de7470e0f55a8b63004dda"];
+    // 设置友盟统计分析appkey
+    [MobClick startWithAppkey:kUmengAppKey];
+    // 设置友盟社会化分享appkey
+    [UMSocialData setAppKey:kUmengAppKey];
     
     // 设置版本号
     [MobClick setAppVersion:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];

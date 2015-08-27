@@ -86,6 +86,11 @@ THE SOFTWARE.
 Copyright 2011 - 2015 UMeng.com. All rights reserved.
 
 
+## UMengSocial
+
+Copyright 2011 - 2013 UMeng.com. All rights reserved.
+
+
 ## pop
 
 BSD License

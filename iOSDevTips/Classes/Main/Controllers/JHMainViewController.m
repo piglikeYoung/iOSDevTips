@@ -29,6 +29,7 @@
 #import "JHMasonryCaseVc.h"
 #import "JHAnimatedImagesVc.h"
 #import "JHMovLoginVc.h"
+#import "JHUmengSocialVc.h"
 
 @interface JHMainViewController ()
 
@@ -66,6 +67,7 @@
     [self setupGroup6];
     [self setupGroup7];
     [self setupGroup8];
+    [self setupGroup9];
 }
 
 - (void)setupGroup0
@@ -224,6 +226,21 @@
 
     
     group.items = @[animatedImages, mov];
+}
+
+- (void)setupGroup9
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"友盟社会化分享";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *umengSocial = [JHCommonArrowItem itemWithTitle:@"友盟社会化分享"];
+    umengSocial.destVcClass = [JHUmengSocialVc class];
+    
+    
+    group.items = @[umengSocial];
 }
 
 

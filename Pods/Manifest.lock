@@ -7,6 +7,7 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - UMengAnalytics (3.5.10)
+  - UMengSocial (4.2.3)
 
 DEPENDENCIES:
   - CocoaAsyncSocket
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - pop (~> 1.0)
   - SDWebImage
   - UMengAnalytics
+  - UMengSocial
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 7cbf214b27f8e7f7574db6a3fd96352ffaed433d
@@ -23,5 +25,6 @@ SPEC CHECKSUMS:
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   UMengAnalytics: 092c24aef47b6ac3c76ad51543f91156a8d7b645
+  UMengSocial: 85882abe5b20aa38ad558ece71360e16b5d50909
 
 COCOAPODS: 0.38.0
