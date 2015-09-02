@@ -42,4 +42,10 @@ typedef NS_ENUM(NSInteger, JHCaptureImageStyle){
  */
 + (UIImage *)resizedImage:(NSString *)name;
 
+/**
+ *  根据颜色绘制一张图片
+ *
+ */
++ (UIImage *)imageWithColor:(UIColor *)color andRect:(CGRect) rect;
+
 @end
