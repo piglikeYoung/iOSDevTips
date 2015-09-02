@@ -58,6 +58,12 @@
 		7DE618961B8870D30034F6AA /* JHMasonryCase4.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618921B8870D30034F6AA /* JHMasonryCase4.m */; };
 		7DE618991B8870F80034F6AA /* JHCase4DataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE618981B8870F80034F6AA /* JHCase4DataEntity.m */; };
 		7DE6189C1B8871320034F6AA /* JHCase4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6189B1B8871320034F6AA /* JHCase4Cell.m */; };
+		7DE7EC811B96DB8B00D8955E /* CircularLoaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC801B96DB8B00D8955E /* CircularLoaderView.m */; };
+		7DE7EC841B96E09E00D8955E /* CircularImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC831B96E09E00D8955E /* CircularImageView.m */; };
+		7DE7EC871B96E2BC00D8955E /* JHCircularImageVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC861B96E2BC00D8955E /* JHCircularImageVc.m */; };
+		7DE7EC8B1B96ED0000D8955E /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8A1B96ED0000D8955E /* CircularLoaderView.swift */; };
+		7DE7EC8E1B96ED8100D8955E /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8D1B96ED8100D8955E /* CircularImageView.swift */; };
+		7DE7EC901B96F35700D8955E /* JHCircularImageVc_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8F1B96F35700D8955E /* JHCircularImageVc_swift.swift */; };
 		7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */; };
 		7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */; };
 		7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */; };
@@ -188,6 +194,16 @@
 		7DE618981B8870F80034F6AA /* JHCase4DataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCase4DataEntity.m; sourceTree = "<group>"; };
 		7DE6189A1B8871320034F6AA /* JHCase4Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCase4Cell.h; sourceTree = "<group>"; };
 		7DE6189B1B8871320034F6AA /* JHCase4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCase4Cell.m; sourceTree = "<group>"; };
+		7DE7EC7F1B96DB8B00D8955E /* CircularLoaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularLoaderView.h; sourceTree = "<group>"; };
+		7DE7EC801B96DB8B00D8955E /* CircularLoaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLoaderView.m; sourceTree = "<group>"; };
+		7DE7EC821B96E09E00D8955E /* CircularImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularImageView.h; sourceTree = "<group>"; };
+		7DE7EC831B96E09E00D8955E /* CircularImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularImageView.m; sourceTree = "<group>"; };
+		7DE7EC851B96E2BC00D8955E /* JHCircularImageVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCircularImageVc.h; sourceTree = "<group>"; };
+		7DE7EC861B96E2BC00D8955E /* JHCircularImageVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCircularImageVc.m; sourceTree = "<group>"; };
+		7DE7EC8A1B96ED0000D8955E /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		7DE7EC8C1B96ED3300D8955E /* iOSDevTips-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOSDevTips-Bridging-Header.h"; sourceTree = "<group>"; };
+		7DE7EC8D1B96ED8100D8955E /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		7DE7EC8F1B96F35700D8955E /* JHCircularImageVc_swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCircularImageVc_swift.swift; sourceTree = "<group>"; };
 		7DE8FA2D1B7C318900D9A305 /* JHTableResponseVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableResponseVc.h; sourceTree = "<group>"; };
 		7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableResponseVc.m; sourceTree = "<group>"; };
 		7DE8FA301B7C36B500D9A305 /* JHTableCustomBtnVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableCustomBtnVc.h; sourceTree = "<group>"; };
@@ -344,6 +360,7 @@
 		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DE7EC7E1B96DB1800D8955E /* CircularLoaderView */,
 				7DE090A31B8EAE23002B0F3F /* Umeng */,
 				7D9C9BE11B8D614400FFD46E /* LoginView */,
 				7DE618741B8845670034F6AA /* MasonryCase */,
@@ -391,6 +408,7 @@
 		7DAF4F931B783FDE00D314CD /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				7DE7EC8C1B96ED3300D8955E /* iOSDevTips-Bridging-Header.h */,
 				7DAF4F941B783FDE00D314CD /* AppDelegate.h */,
 				7DAF4F951B783FDE00D314CD /* AppDelegate.m */,
 			);
@@ -648,6 +666,30 @@
 			path = Case4;
 			sourceTree = "<group>";
 		};
+		7DE7EC7E1B96DB1800D8955E /* CircularLoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				7DE7EC881B96ECDF00D8955E /* Swift */,
+				7DE7EC7F1B96DB8B00D8955E /* CircularLoaderView.h */,
+				7DE7EC801B96DB8B00D8955E /* CircularLoaderView.m */,
+				7DE7EC821B96E09E00D8955E /* CircularImageView.h */,
+				7DE7EC831B96E09E00D8955E /* CircularImageView.m */,
+				7DE7EC851B96E2BC00D8955E /* JHCircularImageVc.h */,
+				7DE7EC861B96E2BC00D8955E /* JHCircularImageVc.m */,
+			);
+			path = CircularLoaderView;
+			sourceTree = "<group>";
+		};
+		7DE7EC881B96ECDF00D8955E /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7DE7EC8A1B96ED0000D8955E /* CircularLoaderView.swift */,
+				7DE7EC8D1B96ED8100D8955E /* CircularImageView.swift */,
+				7DE7EC8F1B96F35700D8955E /* JHCircularImageVc_swift.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		7DE8FA2C1B7C30F600D9A305 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -876,6 +918,7 @@
 			files = (
 				7DF960E91B8DAA5B00E3E9CA /* AppMacro.m in Sources */,
 				7DAF50001B78998400D314CD /* NSString+File.m in Sources */,
+				7DE7EC841B96E09E00D8955E /* CircularImageView.m in Sources */,
 				7DE8FA4A1B7C8B3800D9A305 /* JHTableShowMenuVc.m in Sources */,
 				7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */,
 				7DD75B191B7D7C6F00A7D74C /* JHTableMovingCellVc.m in Sources */,
@@ -890,6 +933,7 @@
 				7DAF4FA41B78404500D314CD /* JHSysPhotoAlbumVc.m in Sources */,
 				7DE090A61B8EAE7A002B0F3F /* ThirdPartService.m in Sources */,
 				7DE8FA3B1B7C6E0900D9A305 /* JHTableSwipeToPerformActionsVc.m in Sources */,
+				7DE7EC901B96F35700D8955E /* JHCircularImageVc_swift.swift in Sources */,
 				7DAF4FB91B784FC700D314CD /* JHCommonItem.m in Sources */,
 				7DE8FA4D1B7C9C1C00D9A305 /* JHTableHairGlassVc.m in Sources */,
 				7DE8FA501B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m in Sources */,
@@ -910,8 +954,10 @@
 				7DAF4FBC1B784FFA00D314CD /* JHCommonArrowItem.m in Sources */,
 				7DE5515A1B7B14CE0068CD81 /* JHPopVc.m in Sources */,
 				7DE9CBB71B7993B500FA7DE7 /* JHSocketServer.m in Sources */,
+				7DE7EC8E1B96ED8100D8955E /* CircularImageView.swift in Sources */,
 				7DE8FA461B7C76C600D9A305 /* SwipeableCell.m in Sources */,
 				7DE618951B8870D30034F6AA /* JHMasonryCase3.m in Sources */,
+				7DE7EC811B96DB8B00D8955E /* CircularLoaderView.m in Sources */,
 				7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */,
 				7DE9CBBE1B79FF6500FA7DE7 /* JHTextView.m in Sources */,
 				7DE551561B7AE4B70068CD81 /* HMNavigationController.m in Sources */,
@@ -921,9 +967,11 @@
 				7DD75B2C1B7DF65800A7D74C /* NSTimer+EZ_Helper.m in Sources */,
 				7DE6189C1B8871320034F6AA /* JHCase4Cell.m in Sources */,
 				7DAF4F981B783FDE00D314CD /* AppDelegate.m in Sources */,
+				7DE7EC871B96E2BC00D8955E /* JHCircularImageVc.m in Sources */,
 				7DAF4FC21B787AFD00D314CD /* JHCustomPhotoAlbumVc.m in Sources */,
 				7DAF50071B78999600D314CD /* UIBarButtonItem+Extension.m in Sources */,
 				7DAF50011B78998400D314CD /* NSString+Hash.m in Sources */,
+				7DE7EC8B1B96ED0000D8955E /* CircularLoaderView.swift in Sources */,
 				7DE0D5191B89782400CE4157 /* JHMasonryCase5.m in Sources */,
 				7DAF4FFC1B78998400D314CD /* Foundation+Log.m in Sources */,
 				7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */,
@@ -1061,17 +1109,20 @@
 			baseConfigurationReference = 74983A02184CA3316314623E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSDevTips/JHPrefixHeader.pch";
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSDevTips/Classes/Main/Others/iOSDevTips-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1080,17 +1131,19 @@
 			baseConfigurationReference = BBE044C142EA45CAFC03FE6D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSDevTips/JHPrefixHeader.pch";
 				INFOPLIST_FILE = iOSDevTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSDevTips/Classes/Main/Others/iOSDevTips-Bridging-Header.h";
 			};
 			name = Release;
 		};

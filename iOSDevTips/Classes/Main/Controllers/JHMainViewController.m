@@ -30,6 +30,7 @@
 #import "JHAnimatedImagesVc.h"
 #import "JHMovLoginVc.h"
 #import "JHUmengSocialVc.h"
+#import "JHCircularImageVc.h"
 
 @interface JHMainViewController ()
 
@@ -68,6 +69,7 @@
     [self setupGroup7];
     [self setupGroup8];
     [self setupGroup9];
+    [self setupGroup10];
 }
 
 - (void)setupGroup0
@@ -240,6 +242,21 @@
     umengSocial.destVcClass = [JHUmengSocialVc class];
     
     group.items = @[umengSocial];
+}
+
+- (void)setupGroup10
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"转圈圈图片加载";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *circularImageOC = [JHCommonArrowItem itemWithTitle:@"转圈圈图片加载-OC版"];
+    circularImageOC.destVcClass = [JHCircularImageVc class];
+    JHCommonArrowItem *circularImageSwift = [JHCommonArrowItem itemWithTitle:@"转圈圈图片加载-Swift版(请自行测试)"];
+    
+    group.items = @[circularImageOC, circularImageSwift];
 }
 
 
