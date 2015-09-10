@@ -31,6 +31,7 @@
 #import "JHMovLoginVc.h"
 #import "JHUmengSocialVc.h"
 #import "JHCircularImageVc.h"
+#import "JHKeyBoardVc.h"
 
 @interface JHMainViewController ()
 
@@ -70,6 +71,7 @@
     [self setupGroup8];
     [self setupGroup9];
     [self setupGroup10];
+    [self setupGroup11];
 }
 
 - (void)setupGroup0
@@ -257,6 +259,23 @@
     JHCommonArrowItem *circularImageSwift = [JHCommonArrowItem itemWithTitle:@"转圈圈图片加载-Swift版(请自行测试)"];
     
     group.items = @[circularImageOC, circularImageSwift];
+}
+
+- (void)setupGroup11
+{
+    // 1.创建组
+    JHCommonGroup *group = [JHCommonGroup group];
+    group.header = @"键盘弹出隐藏";
+    [self.groups addObject:group];
+    
+    // 2.设置组的所有行数据
+    JHCommonArrowItem *keyBoardOC = [JHCommonArrowItem itemWithTitle:@"键盘弹出隐藏-OC版"];
+    keyBoardOC.destVcClass = [JHKeyBoardVc class];
+    keyBoardOC.initByStoryBoard = YES;
+    
+    JHCommonArrowItem *circularImageSwift = [JHCommonArrowItem itemWithTitle:@"键盘弹出隐藏-Swift版(请自行测试)"];
+    
+    group.items = @[keyBoardOC, circularImageSwift];
 }
 
 

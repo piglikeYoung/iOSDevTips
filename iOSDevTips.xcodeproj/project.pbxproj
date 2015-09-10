@@ -64,6 +64,8 @@
 		7DE7EC8B1B96ED0000D8955E /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8A1B96ED0000D8955E /* CircularLoaderView.swift */; };
 		7DE7EC8E1B96ED8100D8955E /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8D1B96ED8100D8955E /* CircularImageView.swift */; };
 		7DE7EC901B96F35700D8955E /* JHCircularImageVc_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8F1B96F35700D8955E /* JHCircularImageVc_swift.swift */; };
+		7DE8935F1BA14FDD008504E5 /* JHKeyBoardVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8935E1BA14FDD008504E5 /* JHKeyBoardVc.m */; };
+		7DE893641BA15338008504E5 /* JHKeyBoardVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE893631BA15338008504E5 /* JHKeyBoardVc.storyboard */; };
 		7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */; };
 		7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */; };
 		7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */; };
@@ -204,6 +206,9 @@
 		7DE7EC8C1B96ED3300D8955E /* iOSDevTips-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOSDevTips-Bridging-Header.h"; sourceTree = "<group>"; };
 		7DE7EC8D1B96ED8100D8955E /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		7DE7EC8F1B96F35700D8955E /* JHCircularImageVc_swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCircularImageVc_swift.swift; sourceTree = "<group>"; };
+		7DE8935D1BA14FDD008504E5 /* JHKeyBoardVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKeyBoardVc.h; sourceTree = "<group>"; };
+		7DE8935E1BA14FDD008504E5 /* JHKeyBoardVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKeyBoardVc.m; sourceTree = "<group>"; };
+		7DE893631BA15338008504E5 /* JHKeyBoardVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JHKeyBoardVc.storyboard; sourceTree = "<group>"; };
 		7DE8FA2D1B7C318900D9A305 /* JHTableResponseVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableResponseVc.h; sourceTree = "<group>"; };
 		7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableResponseVc.m; sourceTree = "<group>"; };
 		7DE8FA301B7C36B500D9A305 /* JHTableCustomBtnVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableCustomBtnVc.h; sourceTree = "<group>"; };
@@ -360,6 +365,7 @@
 		7DAF4F8B1B783E4A00D314CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DE8935C1BA14FB2008504E5 /* KeyBoard */,
 				7DE7EC7E1B96DB1800D8955E /* CircularLoaderView */,
 				7DE090A31B8EAE23002B0F3F /* Umeng */,
 				7D9C9BE11B8D614400FFD46E /* LoginView */,
@@ -690,6 +696,24 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		7DE8935C1BA14FB2008504E5 /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7DE893601BA14FE4008504E5 /* OC */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
+		7DE893601BA14FE4008504E5 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				7DE8935D1BA14FDD008504E5 /* JHKeyBoardVc.h */,
+				7DE8935E1BA14FDD008504E5 /* JHKeyBoardVc.m */,
+				7DE893631BA15338008504E5 /* JHKeyBoardVc.storyboard */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
 		7DE8FA2C1B7C30F600D9A305 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -861,6 +885,7 @@
 			files = (
 				7DAF4F661B78393A00D314CD /* Main.storyboard in Resources */,
 				7DF960E31B8DA17400E3E9CA /* start.mov in Resources */,
+				7DE893641BA15338008504E5 /* JHKeyBoardVc.storyboard in Resources */,
 				7DE090AF1B8EB7C8002B0F3F /* login_background.png in Resources */,
 				7DAF4F6B1B78393A00D314CD /* LaunchScreen.xib in Resources */,
 				7DE8FA471B7C76C600D9A305 /* SwipeableCell.xib in Resources */,
@@ -923,6 +948,7 @@
 				7DAF500B1B789A2800D314CD /* JHImageCaptureViewController.m in Sources */,
 				7DD75B191B7D7C6F00A7D74C /* JHTableMovingCellVc.m in Sources */,
 				7DE618941B8870D30034F6AA /* JHMasonryCase2.m in Sources */,
+				7DE8935F1BA14FDD008504E5 /* JHKeyBoardVc.m in Sources */,
 				7DE618771B8846CB0034F6AA /* JHMasonryCaseVc.m in Sources */,
 				7DAF4FFE1B78998400D314CD /* NSString+Emoji.m in Sources */,
 				7DE618991B8870F80034F6AA /* JHCase4DataEntity.m in Sources */,
