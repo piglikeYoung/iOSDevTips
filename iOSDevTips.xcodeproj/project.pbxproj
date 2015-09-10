@@ -66,8 +66,6 @@
 		7DE7EC901B96F35700D8955E /* JHCircularImageVc_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EC8F1B96F35700D8955E /* JHCircularImageVc_swift.swift */; };
 		7DE8935F1BA14FDD008504E5 /* JHKeyBoardVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8935E1BA14FDD008504E5 /* JHKeyBoardVc.m */; };
 		7DE893641BA15338008504E5 /* JHKeyBoardVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE893631BA15338008504E5 /* JHKeyBoardVc.storyboard */; };
-		7DE893671BA15D01008504E5 /* JHKeyBoardSwiftVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE893661BA15D01008504E5 /* JHKeyBoardSwiftVc.swift */; };
-		7DE893691BA16033008504E5 /* JHKeyBoardSwiftVc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE893681BA16033008504E5 /* JHKeyBoardSwiftVc.storyboard */; };
 		7DE8FA2F1B7C318900D9A305 /* JHTableResponseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */; };
 		7DE8FA321B7C36B500D9A305 /* JHTableCustomBtnVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA311B7C36B500D9A305 /* JHTableCustomBtnVc.m */; };
 		7DE8FA351B7C3B3F00D9A305 /* JHTableCheckmarkVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE8FA341B7C3B3F00D9A305 /* JHTableCheckmarkVc.m */; };
@@ -211,8 +209,6 @@
 		7DE8935D1BA14FDD008504E5 /* JHKeyBoardVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKeyBoardVc.h; sourceTree = "<group>"; };
 		7DE8935E1BA14FDD008504E5 /* JHKeyBoardVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKeyBoardVc.m; sourceTree = "<group>"; };
 		7DE893631BA15338008504E5 /* JHKeyBoardVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JHKeyBoardVc.storyboard; sourceTree = "<group>"; };
-		7DE893661BA15D01008504E5 /* JHKeyBoardSwiftVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHKeyBoardSwiftVc.swift; sourceTree = "<group>"; };
-		7DE893681BA16033008504E5 /* JHKeyBoardSwiftVc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JHKeyBoardSwiftVc.storyboard; sourceTree = "<group>"; };
 		7DE8FA2D1B7C318900D9A305 /* JHTableResponseVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableResponseVc.h; sourceTree = "<group>"; };
 		7DE8FA2E1B7C318900D9A305 /* JHTableResponseVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableResponseVc.m; sourceTree = "<group>"; };
 		7DE8FA301B7C36B500D9A305 /* JHTableCustomBtnVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableCustomBtnVc.h; sourceTree = "<group>"; };
@@ -703,7 +699,6 @@
 		7DE8935C1BA14FB2008504E5 /* KeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				7DE893651BA15CBA008504E5 /* Swift */,
 				7DE893601BA14FE4008504E5 /* OC */,
 			);
 			path = KeyBoard;
@@ -717,15 +712,6 @@
 				7DE893631BA15338008504E5 /* JHKeyBoardVc.storyboard */,
 			);
 			path = OC;
-			sourceTree = "<group>";
-		};
-		7DE893651BA15CBA008504E5 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				7DE893661BA15D01008504E5 /* JHKeyBoardSwiftVc.swift */,
-				7DE893681BA16033008504E5 /* JHKeyBoardSwiftVc.storyboard */,
-			);
-			path = Swift;
 			sourceTree = "<group>";
 		};
 		7DE8FA2C1B7C30F600D9A305 /* TableView */ = {
@@ -905,7 +891,6 @@
 				7DE8FA471B7C76C600D9A305 /* SwipeableCell.xib in Resources */,
 				7DE618791B8848A50034F6AA /* JHMasonryCaseVc.storyboard in Resources */,
 				7DAF4F681B78393A00D314CD /* Images.xcassets in Resources */,
-				7DE893691BA16033008504E5 /* JHKeyBoardSwiftVc.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,7 +965,6 @@
 				7DE8FA501B7CA5B800D9A305 /* JHTableSwipeToPerformActionsVc2.m in Sources */,
 				7DE0D5261B8989A200CE4157 /* JHMasonryCase6.m in Sources */,
 				7DAF4F971B783FDE00D314CD /* JHMainViewController.m in Sources */,
-				7DE893671BA15D01008504E5 /* JHKeyBoardSwiftVc.swift in Sources */,
 				7DEE49D11B832019001191D0 /* JHBgBlurViewVc.m in Sources */,
 				7DAF4FC71B78900300D314CD /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				7DE9CBC11B7A00CF00FA7DE7 /* JHPlaceholderTextViewVc.m in Sources */,

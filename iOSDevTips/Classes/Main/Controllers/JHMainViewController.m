@@ -273,9 +273,7 @@
     keyBoardOC.destVcClass = [JHKeyBoardVc class];
     keyBoardOC.initByStoryBoard = YES;
     
-    JHCommonArrowItem *circularImageSwift = [JHCommonArrowItem itemWithTitle:@"键盘弹出隐藏-Swift版(请自行测试)"];
-    
-    group.items = @[keyBoardOC, circularImageSwift];
+    group.items = @[keyBoardOC];
 }
 
 
